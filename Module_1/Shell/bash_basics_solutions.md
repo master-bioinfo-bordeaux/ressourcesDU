@@ -1,4 +1,4 @@
-# Solution: Où suis-je?     
+## Solution: Où suis-je?     
 
 A partir du diagramme ci-dessous, si la commande pwd affiche /Users/thing, qu'affiche la commande ls ../backup [ choix 1,2,3,4]?
 
@@ -14,7 +14,7 @@ Pour comprendre, comment cela fonctionne, on va remplacer la commande `ls` par `
 Source: https://datacarpentry.org/shell-genomics/02-the-filesystem/index.html
 
 
-# Solutions `seq`
+## Solutions `seq`
 
 Il existe une commande `seq` qui génère automatiquement une série de nombres entiers.
 
@@ -23,7 +23,7 @@ Pour avoir la documentation de cette commande, pensez à utiliser l'argument `--
 # seq --help
 ```
 
-## Question 1: Générer une série de nombres de 1 à 10.
+### Question 1: Générer une série de nombres de 1 à 10.
 ```bash
 seq 10
 ```

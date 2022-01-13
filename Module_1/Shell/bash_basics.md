@@ -96,7 +96,9 @@ $ pwd--help
 ## 3. Modification/Historique des commandes
 
 ➔ Pour vous déplacer dans une ligne de commande afin de corriger une lettre, un mot ou rajouter des arguments, vous devez vous déplacer avec les flèches gauche et/ou droite.
+
 ➔ Par contre, si votre curseur est au milieu d'une ligne de commande, vous pouvez très bien la valider avec la touche Entrée sans être obligé de retourner à la fin de la ligne avec la flèche droite.
+
 ➔ Toute commande Unix validée peut être rappelée avec les touches haut et bas.
 
 ### 3.1. Exemple de modification d'une ligne de commande
@@ -135,19 +137,22 @@ Si vous voulez voir toutes les commandes saisies lors d'une session, tapez la co
 
 ## 4. Complétion des mots
 
-➔ Il existe une fonctionnalité bien pratique pour éviter de taper toutes les lettres d'une commande ou d'un nom de fichier en utilisant la touche Tab.
+➔ Il existe une fonctionnalité bien pratique pour éviter de taper toutes les lettres d'une commande ou d'un nom de fichier en utilisant la touche <kbd>Tab</kbd>.
 Par exemple, pour la commande echo qui affiche du texte, on peut taper uniquement les deux premières lettres e + c + Tab et la commande est complétée.
-➔ Si vous avez plusieurs mots possibles, rien n'est ajouté. Par contre, vous pouvez faire un double Tab (Tab + Tab) pour voir toutes les possibilités.
+
+➔ Si vous avez plusieurs mots possibles, rien n'est ajouté. Par contre, vous pouvez faire un double <kbd>Tab</kbd> (<kbd>Tab</kbd> + <kbd>Tab</kbd>) pour voir toutes les possibilités.
+
 Par exemple, pour la commande `loadkeys` précédemment utilisée,
-- Si vous tapez l + o + a + Tab, il y a complétion en load mais pas en loadkeys ce qui signifie qu'il y a plusieurs commandes commençant par load.
-- Si vous faites un double Tab (Tab + Tab), alors la liste des commandes s'affiche. Il y en a deux:
+- Si vous tapez l + o + a + <kbd>Tab</kbd>, il y a complétion en load mais pas en loadkeys ce qui signifie qu'il y a plusieurs commandes commençant par `load`.
+- Si vous faites un double <kbd>Tab</kbd> (<kbd>Tab</kbd> + <kbd>Tab</kbd>), alors la liste des commandes s'affiche. Il y en a deux:
 
 ```loadkeys loadunimap```
 
 - Vous devez alors taper la lettre k + Tab pour voir afficher loadkeys
 
-Récapitulatif
-loa + Tab => load + k + Tab => loadkeys
+**Récapitulatif**
+
+<kbd>l</kbd> + <kbd>o</kbd> + <kbd>a</kbd> + <kbd>Tab</kbd> => `load` + <kbd>k</kbd> + <kbd>Tab</kbd> => loadkeys
 
 > **Note**: C'est surtout intéressant lorsque vous ne vous souvenez plus de l'orthographe exacte d'une commande. En tapant les 1ères lettres vous pouvez lister les différentes commandes commençant par ces mêmes lettres.
 

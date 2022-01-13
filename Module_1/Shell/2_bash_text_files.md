@@ -286,7 +286,7 @@ q	        Quit less
 ```
 
 
-# Commande grep  
+# F. Commande grep  
 
 ## Filtrer des lignes dans un fichier texte.
 
@@ -349,7 +349,7 @@ main()
 ```
 
 
-# Commande grep - regex 
+# G. Commande grep - regex 
 
 ## 4. Commande grep - Les expressions régulières
 
@@ -507,7 +507,7 @@ $ egrep '^>[a-z]{3}' multi.fasta
 >sequence4
 ```
 
-# Pipe et redirection     
+# H. Pipe et redirection     
 
 > **Note**: Chaque fois que vous cliquez dans la fenêtre de l'émulateur, celui-ci prend la main sur la souris et la fait "disparaître" (comme dans un vrai mode "Ligne de Commande"). Pour "retrouver" votre souris, tapez sur la touche Esc.
 
@@ -563,9 +563,9 @@ Le résultat attendu est: AGCTAGCTACTAGCAGCTACTACGAGCATCTACGGCGCGATCTACG
 > Note: Si vous voulez commencer la recherche du répertoire courant, il faut mettre un point (.)
 
 
-# Commandes cut, paste     
+# I. Commandes cut, paste     
 
-> **Note**: Chaque fois que vous cliquez dans la fenêtre de l'émulateur, celui-ci prend la main sur la souris et la fait "disparaître" (comme dans un vrai mode "Ligne de Commande"). Pour "retrouver" votre souris, tapez sur la touche Esc.
+> **Note**: Chaque fois que vous cliquez dans la fenêtre de l'émulateur, celui-ci prend la main sur la souris et la fait "disparaître" (comme dans un vrai mode "Ligne de Commande"). Pour "retrouver" votre souris, tapez sur la touche <kbd>Esc</kbd>.
 
 
 ## 1. La commande cut
@@ -600,3 +600,7 @@ $ touch zmays{A,C}_R{1,2}-temp.fastq
 ```
 
 ## 2. La commande paste
+
+# J. Commandes sort et uniq
+
+

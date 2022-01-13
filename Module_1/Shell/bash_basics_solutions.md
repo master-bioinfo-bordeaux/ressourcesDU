@@ -1,18 +1,15 @@
 # Solution: Où suis-je?     
 
-
 A partir du diagramme ci-dessous, si la commande pwd affiche /Users/thing, qu'affiche la commande ls ../backup [ choix 1,2,3,4]?
-
 
 La bonne solution est la **4**. 
 
-Pour comprendre, comment cela fonctionne, on va remplacer la commande ls par cd (change directory). 
+Pour comprendre, comment cela fonctionne, on va remplacer la commande `ls` par `cd` (change directory). 
 
-- Vous êtes au départ dans /Users/thing
-- si vous faites cd .., vous "remontez" dans /Users, 
-- puis cd backup, vous "redescendez" dans le répertoire backup/. 
-- Ce que vous listez est donc les trois répertoires original, pnas_final et pnas_sub.
-
+- Vous êtes au départ dans `/Users/thing`
+- si vous faites `cd ..`, vous "remontez" dans `/Users`, 
+- puis `cd backup`, vous "redescendez" dans le répertoire `backup/`. 
+- Ce que vous listez est donc les trois répertoires `original`, `pnas_final` et `pnas_sub`.
 
 Source: https://datacarpentry.org/shell-genomics/02-the-filesystem/index.html
 

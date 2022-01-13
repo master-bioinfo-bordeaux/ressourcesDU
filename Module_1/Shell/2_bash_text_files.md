@@ -258,7 +258,7 @@ La commande less déjà mentionné est très adapté aux fichiers longs car elle
 #### 3.1. Navigation
 
 ```
-**Key command**	**Action**                          
+Key command	Action                          
 down arrow key  Move down one line.
 up arrow key    Move up one line.
 space bar	Move down one page.

@@ -1,0 +1,5 @@
+id	description
+CSK2B_ARATH	kinase
+CSK2C_ARATH	kinase
+CSK2E_ARATH	kinase
+CSK2D_ARATH	kinase

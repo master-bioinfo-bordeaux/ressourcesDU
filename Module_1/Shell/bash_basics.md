@@ -120,7 +120,7 @@ $ echo "Hello Bordeaux!"
 
 Si vous voulez voir toutes les commandes saisies lors d'une session, tapez la commande history
 
-```sh
+```bash
 2002  ls
 2003  pwd
 2004  sudo apt install exfat-fuse exfat-utils 

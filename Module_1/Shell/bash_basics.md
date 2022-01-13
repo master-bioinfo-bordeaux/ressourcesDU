@@ -60,11 +60,13 @@ root@localhost:~#
 
 ➔ Une commande Unix/Linux est composée de trois parties:
 
-Le nom de la commande. Toutes les commandes Unix sont en minuscules et sont des mots assez courts.
-Les arguments qui commencent par un ou deux tirets vont permettre de moduler le comportement de la commande
-Les paramètres d'entrée qui sont la plupart du temps un ou plusieurs noms de fichiers. Ce sont eux que l'on va modifier par la commande.
-Les commandes, arguments et nom.s de fichier doivent être séparés par des espaces (le nombre d'espaces n'a par contre aucune importance).
-command [-argument] [--long-argument] file
+1. Le nom de la commande. Toutes les commandes Unix sont en minuscules et sont des mots assez courts.
+2. Les arguments qui commencent par un ou deux tirets vont permettre de moduler le comportement de la commande
+3. Les paramètres d'entrée qui sont la plupart du temps un ou plusieurs noms de fichiers. Ce sont eux que l'on va modifier par la commande.
+
+> **Note**: Les commandes, arguments et nom.s de fichier doivent être séparés par des espaces (le nombre d'espaces n'a par contre aucune importance).
+
+`command [-argument] [--long-argument] file`
 
 > **Note**: Avoir de l'aide sur une commande se fait en tapant l'argument `--help`.
 

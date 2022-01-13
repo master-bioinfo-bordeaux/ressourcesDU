@@ -76,6 +76,7 @@ This gives you the natural logarithm of x, if x is positive; otherwise, it repor
 #### 3.2.6. Fonctions aléatoires
 
 ##### 3.2.6.1. Fonction rand()
+
 Génére une valeur uniformément distribuée entre zero et one. La valeur n'est jamais zero ni un. Si on souhaite des nombres aléatoires entiers, onpeut utiliser cette fonction qui génère des nombres entre 0 et `n`.
 
 ```awk
@@ -100,7 +101,7 @@ function roll(n) {
 }
 ```
 
-Caution: In most awk implementations, including gawk, rand starts generating numbers from the same starting number, or seed, each time you run awk. Thus, a program will generate the same results each time you run it. The numbers are random within one awk run, but predictable from run to run. This is convenient for debugging, but if you want a program to do different things each time it is used, you must change the seed to a value that will be different in each run. To do this, use srand.
+> **Attention!**: La fonction `rand()` donne toujours la même série de nombres aléatoires à chaque nouvelle exécution. Si vous souhaitez un comportement plus aléatoire, il peut être bon d'utiliser la fonction `srand(...)` suivante.
 
 ##### 3.2.6.2. Fonction srand([x])
 

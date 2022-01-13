@@ -598,10 +598,7 @@ $ cd
 $ cd data/zmays-snps/data/seqs
 $ touch zmays{A,C}_R{1,2}-temp.fastq
 ```
-  $ # On se place dans son HOME. 
-  $ cd
-  $ cd data/zmays-snps/data/seqs
-  $ touch zmays{A,C}_R{1,2}-temp.fastq
+
   
 ## 2. La commande paste
 

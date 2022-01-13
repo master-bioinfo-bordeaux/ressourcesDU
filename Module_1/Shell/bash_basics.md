@@ -36,6 +36,7 @@ Pour cette série d'exercices sur le shell Unix, nous utiliserons un émulateur 
 ## 1. Le prompt
 
 ![](img/copy.sh.png)
+
 **Fig.1**: Capture d'écran du shell Unix
 
 ➔ Le prompt qui contient plusieurs informations:
@@ -301,6 +302,7 @@ A partir du diagramme ci-dessous, si la commande pwd affiche /Users/thing, qu'af
 4. `original pnas_final pnas_sub`
 
 ![](img/filesystem.png)
+
 **Fig.1**: Arborescence de fichiers. _Source: https://datacarpentry.org/shell-genomics/02-the-filesystem/index.html_
 
 
@@ -371,7 +373,8 @@ mv backup.fasta backdir
 ```
 
 A ce stade, quelle est l'arborescence de vos fichiers?
-> **Note**: Vous pouvez utiliser la commande ls avec l'argument -R (pour récurrence) pour visualiser toute l'arborescence de votre répertoire personnel.
+
+> **Note**: Vous pouvez utiliser la commande `ls` avec l'argument `-R` (pour récurrence) pour visualiser toute l'arborescence de votre répertoire personnel.
 
 Maintenant, faire le ménage...
 
@@ -393,7 +396,7 @@ nano text.txt
 ```
 Une fenêtre s'ouvre. Vous pouvez tapez votre texte. Dans la partie inférieure, vous avez la barre de menu.
 
-
+![](https://www.tecmint.com/wp-content/uploads/2018/10/Create-New-File.png)
 
 **Fig. 1**: Capture d'écran de la zone de texte de nano + sa barre de menu. Source: https://www.tecmint.com/learn-nano-text-editor-in-linux/
 
@@ -460,12 +463,12 @@ Ctrl+G	Display help text
 ```
 
 
-# H. Exercice avec l'éditeur nano     
+# H. Exercice avec l'éditeur `nano`     
 On se propose de créer un fichier FASTA contenant une séquence
 
 Se placer dans son HOME en tapant la commande cd
 
-## 1. Exécuter nano
+## 1. Exécuter `nano`
 ```bash
 nano test.fasta
 ```
@@ -478,8 +481,9 @@ Pour avoir accès à tous les raccourcis, tapez Ctrl+G (Get help).
 
 Pour quitter l'aide en ligne, faire Ctrl+X (c'est indiqué dans la barre de menu inférieure sous la forme ^X: Close).
 
+![](https://www.tecmint.com/wp-content/uploads/2018/10/Nano-Editor-Shortcut-Keys.png)
 
-Fig. 1: Capture d'écran de l'aide ne ligne. Source: https://www.linuxjournal.com/content/linux-command-line-interface-introduction-guide.
+**Fig. 1**: Capture d'écran de l'aide en ligne. _Source: https://www.linuxjournal.com/content/linux-command-line-interface-introduction-guide._
 
 ## 3.Saisie de texte
 

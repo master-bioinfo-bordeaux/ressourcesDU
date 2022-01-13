@@ -1,4 +1,4 @@
-# Configuration
+# A. Configuration
 
 Pour cette série d'exercices sur le shell Unix, nous utiliserons un émulateur ce qui évite toute installation.
 
@@ -20,7 +20,7 @@ Pour cette série d'exercices sur le shell Unix, nous utiliserons un émulateur 
 
 **Fig.2**: Capture d'écran de la 2ème fenêtre qui sera utilisée dans la suite du cours.
 
-# Références
+## Références
 
 - https://bioinformaticsworkbook.org/Appendix/Unix/unix-basics-1.html#gsc.tab=0
 - https://data-skills.github.io/unix-and-bash/
@@ -29,7 +29,7 @@ Pour cette série d'exercices sur le shell Unix, nous utiliserons un émulateur 
 
 > **Expert Only**: Si jamais, le clavier est en configuration QWERTY, tapez loadkeys fr (Attention avec un clavier Français, il faut tapez loqdkeys fr) puis validez avec la touche <kbd>Entrée</kbd>
 
-# Ligne de commande
+# B. Ligne de commande
 
 >**Note**: Chaque fois que vous cliquez dans la 1ère fenêtre de l'émulateur, celui-ci prend la main sur la souris et la fait "disparaître" (comme dans un vrai mode "Ligne de Commande"). Pour "retrouver" votre souris, tapez sur la touche Esc.
 
@@ -149,7 +149,7 @@ loa + Tab => load + k + Tab => loadkeys
 
 > **Note**: C'est surtout intéressant lorsque vous ne vous souvenez plus de l'orthographe exacte d'une commande. En tapant les 1ères lettres vous pouvez lister les différentes commandes commençant par ces mêmes lettres.
 
-# Exercice `seq`
+# C. Exercice `seq`
 
 Il existe une commande seq qui génère automatiquement une série de nombres entiers
 
@@ -214,11 +214,11 @@ Il existe une commande seq qui génère automatiquement une série de nombres en
 091
 ```
 
-# Manipulation de Fichiers  
+# D. Manipulation de Fichiers  
 
 ## 1. Navigation au sein du système de fichiers: ls, pwd, cd
 
-### 2.1. Lister le contenu du répertoire courant (LiSt what is in your current directory)- `ls`
+### 1.1. Lister le contenu du répertoire courant (LiSt what is in your current directory)- `ls`
 
 ```bash
 ls
@@ -278,8 +278,7 @@ Les raccourcis à connaître pour se déplacer.
 Question 1: Dans le répertoire nbench/ combien y a t-il de fichiers?
 Question 2: Dans le répertoire nbench/ combien y a t-il de fichiers qui commence par la lettre 'n' et qui ont une extension 'h'?
 
-# Exercice: Où suis-je?     
-
+# E. Exercice: Où suis-je?     
 
 A partir du diagramme ci-dessous, si la commande pwd affiche /Users/thing, qu'affiche la commande ls ../backup [ choix 1,2,3,4]?
 
@@ -294,33 +293,46 @@ original pnas_final pnas_sub
 > **Source**: https://datacarpentry.org/shell-genomics/02-the-filesystem/index.html
 
 
-Manipulation de fichiers     
-2. Files - Create, edit, delete files and directories: mkdir, nano, touch, cp, mv, rm, rmdir, cat, head, less
+# D.Manipulation de fichiers
+
+## 2. Files - Create, edit, delete files and directories: mkdir, nano, touch, cp, mv, rm, rmdir, cat, head, less
 Pour s'amuser un peu, on va créer un répertoire nommé test.
 
 Se placer dans son HOME en tapant la commande cd
 
-2.1. Créer un répertoire (make directory) - mkdir
+### 2.1. Créer un répertoire (make directory) - mkdir
+
+```bash
 mkdir test
 cd test
 ls -l
+```
+
 Il n'y a rien dedans. Pour créer un nouveau fichier vide, vous pouvez utiliser:
 
-2.2. touch
-            
+### 2.2. touch
+      
+```bash
 # Je m'assure que je suis dans mon HOME
 cd
 # Je me déplace dans le sous-répertoire test que je viens de créer
 cd test
 # Je crée un fichier nommé seq.fasta
 touch seq.fasta
-2.3. Copie d'un fichier (CoPy) -cp
-Si on veut faire une copie de notre fichier seq.fasta...
+```
 
+### 2.3. Copie d'un fichier (CoPy) -cp
+
+Si on veut faire une copie de notre fichier seq.fasta...
+```bash
 # Copy with cp
-cp seq.fasta backup.fasta
-Note: Pensez à la complétion pour aller plus vite lors de la saisie. Par exemple, cp s e Tab pour afficher seq.fasta etc.
-2.4. Visualiser le contenu d'un fichier - cat, less
+cp seq.fasta backup.fasta```
+```
+
+> **Note**: Pensez à la complétion pour aller plus vite lors de la saisie. Par exemple, cp s e Tab pour afficher seq.fasta etc.
+
+### 2.4. Visualiser le contenu d'un fichier - cat, less
+
 On peut voir le contenu d'un fichier en utilisant:
 
 la commande less (pratique pour des grands fichiers car affiche page par page) ou
@@ -329,11 +341,14 @@ cd
 cat hello.c
 less hello.c
 
-2.6. wc
-Permet de récupérer quelques statistiques simples comme le nombre de lignes:
+### 2.5. wc
 
+Permet de récupérer quelques statistiques simples comme le nombre de lignes:
+```bash
 wc -l hello.c
-2.7. Déplacer, détruire un fichier ou un répertoire - mv, rm, rmdir
+```
+
+### 2.7. Déplacer, détruire un fichier ou un répertoire - mv, rm, rmdir
 Pour déplacer et/ou renommer un fichier, on utilise la commande mv (MoVe)
 Pour détruire un fichier, on utilise la commande rm (ReMove)
 Pour détruire un répertoire, on utilise la commande rmdir
@@ -346,19 +361,16 @@ Note: Vous pouvez utiliser la commande ls avec l'argument -R (pour récurrence) 
 
 Maintenant, faire le ménage...
 
-Conseil: Faire les commandes les unes après les autres et vérifiez avec la commande ls pour savoir ce que vous avez fait.
+> **Conseil**: Faire les commandes les unes après les autres et vérifiez avec la commande ls pour savoir ce que vous avez fait.
+> 
+```bash
 rm seq.fasta
 rm backup.fasta
 rm backdir/backup.fasta
 rmdir backdir
+```
 
-Table de contenu
-Contenu 1:	Previous
-Aller 1:	Page précédente
-Contenu 2:	Next
-Aller 2:	Page suivante
-Importer des questions | Ajouter une page de contenu | Ajouter un groupe | Ajouter une fin de branchement | Ajouter une fin de groupe | Ajouter une page question ici
-Editeur de Texte: nano     
+# Editeur de Texte: nano     
 3. Nano-Editeur de texte - nano
 plutôt que touch, on peut utiliser un éditeur de texte pour créer un fichier et écrire/modifier son contenu.
 

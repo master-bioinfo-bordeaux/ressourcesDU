@@ -163,7 +163,7 @@ Il existe une commande seq qui génère automatiquement une série de nombres en
 > **Note**: Pour avoir la documentation de cette commande, pensez à utiliser l'argument --help
 >```$ seq --help```
 
-## **Question 1**: Générer une série de nombres de 1 à 10.
+### **Question 1**: Générer une série de nombres de 1 à 10.
 ```bash
 1
 2
@@ -177,7 +177,7 @@ Il existe une commande seq qui génère automatiquement une série de nombres en
 10
 ```
 
-## Question 2: Générer une série de nombres de 10 à 20
+### Question 2: Générer une série de nombres de 10 à 20
 
 ```bash
 10
@@ -193,7 +193,7 @@ Il existe une commande seq qui génère automatiquement une série de nombres en
 20
 ```
 
-## Question 3: Générer les nombres pairs de 0 à 10 inclus
+### Question 3: Générer les nombres pairs de 0 à 10 inclus
 ```bash
 0
 2
@@ -203,13 +203,13 @@ Il existe une commande seq qui génère automatiquement une série de nombres en
 10
 ```
 
-## Question 4: Générer les nombres impairs de 0 à 10 inclus en une seule ligne séparée par des virgules
+### Question 4: Générer les nombres impairs de 0 à 10 inclus en une seule ligne séparée par des virgules
 
 ```bash
 1,3,5,7,9
 ```
 
-## Question 4: Générer les nombres multiples de 13 de 0 à 100 avec un nombre de chiffres constant ( un ou plusieurs zéros devant)
+### Question 5: Générer les nombres multiples de 13 de 0 à 100 avec un nombre de chiffres constant ( un ou plusieurs zéros devant)
 ```bash
 000
 013
@@ -286,7 +286,7 @@ Les raccourcis à connaître pour se déplacer.
 /  Root of the file system (like C:\ in Windows)
 ```
 
-### 1.4. Exercice
+### 1.4. Exercices
 
 - **Question 1**: Dans le répertoire nbench/ combien y a t-il de fichiers?
 - **Question 2**: Dans le répertoire nbench/ combien y a t-il de fichiers qui commence par la lettre 'n' et qui ont une extension 'h'?
@@ -295,15 +295,13 @@ Les raccourcis à connaître pour se déplacer.
 
 A partir du diagramme ci-dessous, si la commande pwd affiche /Users/thing, qu'affiche la commande ls ../backup [ choix 1,2,3,4]?
 
-```
-../backup: No such file or directory
-2021-12-01 2022-01-08 2022-01-27
-2021-12-01/ 2022-01-08/ 2022-01-27/
-original pnas_final pnas_sub
-```
+1. `../backup: No such file or directory`
+2. `2021-12-01 2022-01-08 2022-01-27`
+3. `2021-12-01/ 2022-01-08/ 2022-01-27/`
+4. `original pnas_final pnas_sub`
 
-
-> **Source**: https://datacarpentry.org/shell-genomics/02-the-filesystem/index.html
+![](img/filesystem_challenge.png)
+**Fig.1**: Arborescence de fichiers. _Source: https://datacarpentry.org/shell-genomics/02-the-filesystem/index.html_
 
 
 # F.Manipulation de fichiers (suite)

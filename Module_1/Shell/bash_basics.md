@@ -14,10 +14,10 @@ Pour cette série d'exercices sur le shell Unix, nous utiliserons un émulateur 
 >**Note**: Chaque fois que vous cliquez dans la première fenêtre de l'émulateur, celui-ci prend la main sur la souris et la fait "disparaître" (comme dans un vrai mode "Ligne de Commande"). Pour "retrouver" votre souris, tapez sur la touche Esc.
 
 
-
+![](img/copy-sh.png)
 **Fig.1**: Capture d'écran du shell Arch Linux avec le panneau d'information à gauche.
 
-
+![](img/copy-sh-console.png)
 **Fig.2**: Capture d'écran de la 2ème fenêtre qui sera utilisée dans la suite du cours.
 
 ## Références
@@ -35,7 +35,7 @@ Pour cette série d'exercices sur le shell Unix, nous utiliserons un émulateur 
 
 ## 1. Le prompt
 
-
+![](img/copy.sh.png)
 **Fig.1**: Capture d'écran du shell Unix
 
 ➔ Le prompt qui contient plusieurs informations:
@@ -53,7 +53,7 @@ Pour cette série d'exercices sur le shell Unix, nous utiliserons un émulateur 
 > **Note**: Cette commande sert à voir votre localisation dans l'arborescence de fichiers (par défaut sur cet émulateur, c'est /root). On appelle ce répertoire (directory) votre HOME (dossier personnel).
 
 ```bash
-root@localhost:~# pwd Entrée
+root@localhost:~# pwd <kbd>Entrée</kbd>
 /root
 root@localhost:~#
 ```

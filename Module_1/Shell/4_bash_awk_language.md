@@ -30,38 +30,16 @@ $ awk '{ sum = $2 + $3 + $4 ; avg = sum / 3; print $1, avg }' notes.tsv
 
 ### Les opérateurs arithmétiques
 
-#### Puissance
-
-`x ^ y` ou `x ** y` : x puissance y ( 2 ^ 3 = 2 ** 3 = 2 * 2 * 2 = 8
- 
-Exponentiation; x raised to the y power. ‘2 ^ 3’ has the value eight; the character sequence ‘**’ is equivalent to ‘^’. (c.e.)
-
-#### Negation
-- x
-.
-
-#### Plus unitaire avec conversion en nombre
-
-+ x
-
-#### Addition
-x + y
-
-
-#### Soustraction
-x - y
-
-#### Multiplication
-
-x * y
-.
-#### Division
-x / y
-
-Par exemple, ‘3 / 4’ = 0.75
-
-#### Modulo
-x % y
+|Fonction|Syntaxe|Description|
+|--------|-------|-----------|
+|Puissance|`x ^ y` ou `x ** y`| x puissance y ( 2 ^ 3 = 2 ** 3 -> 2 * 2 * 2 = 8 |
+| Addition| x + y| 2 + 3 -> 5|
+|Soustraction| x - y | 2 - 3 -> 1 |
+|Multiplication| x * y | 2 * 3 -> 6 |
+|Division| x * y | 3 / 4 -> 0.75 |
+|Modulo| x % y | 3 % 2 -> 1 |
+|Négation| -x | -3 -> -3 |
+|Plus unitaire| +x | +"3" -> 3 . Conversion de type en nombre|
 
 
 ### Les fonctions mathématiques

@@ -66,12 +66,12 @@ log(x)
 This gives you the natural logarithm of x, if x is positive; otherwise, it reports an error.
 
 #### 3.2.5. Fonctions trigonométriques
-sin(x)
-This gives you the sine of x, with x in radians.
-cos(x)
-This gives you the cosine of x, with x in radians.
-atan2(y, x)
-This gives you the arctangent of y / x in radians.
+
+|Fonction|Description|
+|--------|-----------|
+|sin(x)  | sinus de x, with x en radians.|
+|cos(x)|cosine of x, with x en radians.|
+|atan2(y, x)|arc-tangente e y / x en radians.|
 
 #### 3.2.6. Fonctions aléatoires
 

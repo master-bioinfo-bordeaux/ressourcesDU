@@ -30,7 +30,9 @@ A,B,C
 Selon le type de fichier contenant les données tabulaires, le séparateur peut être une virgule, un point-virgule, un espace, une tabulation, etc. On doit le spécifier à awk pour qu'il puisse traiter correctement les données.
 
 > **Note**: Le séparateur par défaut est le Tab ou l'espace (un ou plusieurs). Dans ce cas, pas besoin de le spécifier.
-On utilise l'argument -F suivi du caractère séparant les données dans une ligne. Ce caractère doit être délimité par des guillemets simples ou doubles. Si c'est une virgule, on tapera -F ',' comme ci-dessous.
+
+
+On utilise l'argument `-F` suivi du caractère séparant les données dans une ligne. Ce caractère doit être délimité par des guillemets simples ou doubles. Si c'est une virgule, on tapera `-F ','` comme ci-dessous.
 
 ```bash
 $ awk -F ',' '{print($2)}' dummy.csv
@@ -38,18 +40,20 @@ $ awk -F ',' '{print($2)}' dummy.csv
 
 ### 2. Écrire un script awk
 
-Le script awk doit être placé après les arguments et avant le nom de fichier.
+Le script `awk` doit être placé après les arguments et avant le nom de fichier.
 Il doit être délimité par des guillemets simples (pour ne pas le confondre avec le nom de fichier).
-Les instructions du langage awk doivent être incluses dans des accolades ouvrante et fermante {et }. Ces caractères sont obtenus avec les combinaisons de touche suivantes: AltGr+4 et AltGr++, respectivement.
-Si on utilise plusieurs instructions dans le script, on doit les séparer par un point-virgule ;.
-Un script awk aura donc la syntaxe suivante:
-awk '{ instruction1 ;  instruction2 ; instruction3 }' file
+Les instructions du langage awk doivent être incluses dans des accolades ouvrante et fermante { et }. Ces caractères sont obtenus avec les combinaisons de touche suivantes: <kbd>AltGr</kbd>+<kbd>4</kbd> et <kbd>AltGr</kbd>+<kbd>+</kbd>, respectivement.
+Si on utilise plusieurs instructions dans le script, on doit les séparer par un point-virgule <kbd>;</kbd>.
+
+Un script `awk` aura donc la syntaxe suivante:
+
+`awk '{ instruction1 ;  instruction2 ; instruction3 }' file`
 
 ### 3. Afficher du texte
 
-L'instruction (ou fonction) la plus utile est print(..) qui permet d'afficher des données du fichier à traiter.
+L'instruction (ou fonction) la plus utile est `print(..)` qui permet d'afficher des données du fichier à traiter.
 
-Dans cet exemple très simple, on affiche le texte "Hello Bordeaux!" pour chaque ligne du fichier dummy.csv
+Dans cet exemple très simple, on affiche le texte "Hello Bordeaux!" pour chaque ligne du fichier `dummy.csv`.
 
 ```bash
 $ awk -F ',' '{print("Hello Bordeaux!")}' dummy.csv

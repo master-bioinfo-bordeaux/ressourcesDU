@@ -300,7 +300,7 @@ A partir du diagramme ci-dessous, si la commande pwd affiche /Users/thing, qu'af
 3. `2021-12-01/ 2022-01-08/ 2022-01-27/`
 4. `original pnas_final pnas_sub`
 
-![](img/filesystem_challenge.png)
+![](img/filesystem.png)
 **Fig.1**: Arborescence de fichiers. _Source: https://datacarpentry.org/shell-genomics/02-the-filesystem/index.html_
 
 

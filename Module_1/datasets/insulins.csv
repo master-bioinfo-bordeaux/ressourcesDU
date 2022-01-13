@@ -1,0 +1,497 @@
+id,title,organism,length
+XP_013992220.2, insulin ,Salmo salar,105
+XP_014053670.1, insulin ,Salmo salar,139
+NP_001278826.1, insulin preproprotein ,Homo sapiens,110
+NP_001172027.1, insulin preproprotein ,Homo sapiens,110
+NP_001172026.1, insulin preproprotein ,Homo sapiens,110
+NP_000198.1, insulin preproprotein ,Homo sapiens,110
+XP_036284716.2, insulin ,Pipistrellus kuhlii,337
+XP_045414405.1, insulin ,Lemur catta,110
+XP_045343176.1, insulin ,Leopardus geoffroyi,110
+XP_045373943.1, insulin isoform X5 ,Camelus bactrianus,216
+XP_015289666.1, insulin ,Macaca fascicularis,110
+XP_004717235.1, insulin ,Echinops telfairi,108
+NP_001123565.1, insulin precursor ,Canis lupus familiaris,110
+XP_041743011.1, insulin ,Coregonus clupeaformis,105
+NP_990553.1, insulin preproinsulin precursor ,Gallus gallus,107
+NP_001191615.1, insulin precursor ,Aplysia californica,156
+XP_021540854.1, insulin ,Neomonachus schauinslandi,110
+XP_019666739.1, insulin isoform X1 ,Felis catus,110
+XP_004759728.2, insulin ,Mustela putorius furo,109
+XP_012915491.1, insulin ,Mustela putorius furo,109
+XP_006051533.1, insulin ,Bubalus bubalis,105
+XP_004654275.1, insulin ,Jaculus jaculus,110
+NP_001009272.1, insulin precursor ,Felis catus,110
+XP_014685720.1, insulin isoform X4 ,Equus asinus,110
+XP_044540673.1, insulin ,Gracilinanus agilis,103
+XP_043940818.1, insulin ,Protopterus annectens,109
+XP_026338704.1, insulin ,Ursus arctos horribilis,109
+XP_044281897.1, insulin ,Varanus komodoensis,95
+XP_044227487.1, insulin ,Thunnus albacares,115
+XP_044227486.1, insulin ,Thunnus albacares,115
+XP_044125159.1, insulin ,Bufo gargarizans,106
+XP_044117161.1, insulin ,Neogale vison,109
+XP_044078531.1, insulin ,Siniperca chuatsi,164
+XP_043997514.1, insulin isoform X2 ,Gambusia affinis,117
+XP_043997513.1, insulin isoform X1 ,Gambusia affinis,140
+XP_043897175.1, insulin ,Solea senegalensis,118
+NP_571131.1, insulin preproprotein ,Danio rerio,108
+XP_043827800.1, insulin ,Dromiciops gliroides,103
+XP_043827798.1, insulin ,Dromiciops gliroides,103
+XP_043779567.1, LOW QUALITY PROTEIN: insulin ,Cervus elaphus,105
+XP_007063026.1, insulin ,Chelonia mydas,107
+XP_043437955.1, insulin ,Prionailurus bengalensis,110
+XP_043307924.1, insulin ,Cervus canadensis,105
+XP_043307923.1, insulin ,Cervus canadensis,105
+XP_043094266.1, insulin ,Puntigrus tetrazona,108
+XP_043091795.1, insulin ,Puntigrus tetrazona,108
+XP_042815670.1, insulin ,Panthera tigris,110
+XP_007092665.2, insulin ,Panthera tigris,231
+XP_042762151.1, insulin ,Panthera leo,110
+XP_009974501.3, LOW QUALITY PROTEIN: insulin ,Tyto alba,139
+XP_042740624.1, insulin ,Lagopus leucura,107
+NP_001379200.1, INSulin related ,Caenorhabditis elegans,95
+NP_001367970.1, INSulin related ,Caenorhabditis elegans,77
+NP_001364638.1, INSulin related ,Caenorhabditis elegans,47
+NP_001359835.1, INSulin related ,Caenorhabditis elegans,118
+XP_023957939.1, insulin ,Chrysemys picta bellii,107
+XP_005312438.1, insulin ,Chrysemys picta bellii,107
+NP_496902.2, INSulin related ,Caenorhabditis elegans,165
+NP_001022529.2, INSulin related ,Caenorhabditis elegans,106
+NP_001255416.1, INSulin related ,Caenorhabditis elegans,104
+NP_001251579.1, INSulin related ,Caenorhabditis elegans,87
+NP_502702.2, INSulin related ,Caenorhabditis elegans,138
+NP_001024125.1, INSulin related ,Caenorhabditis elegans,85
+NP_001021850.1, INSulin related ,Caenorhabditis elegans,67
+NP_001021849.1, INSulin related ,Caenorhabditis elegans,72
+NP_493443.2, INSulin related ,Caenorhabditis elegans,103
+NP_001021847.1, INSulin related ,Caenorhabditis elegans,83
+NP_001021846.1, INSulin related ,Caenorhabditis elegans,76
+NP_001022339.1, INSulin related ,Caenorhabditis elegans,107
+NP_001022154.1, INSulin related ,Caenorhabditis elegans,114
+NP_001022153.1, INSulin related ,Caenorhabditis elegans,81
+NP_001021963.1, INSulin related ,Caenorhabditis elegans,86
+NP_001021962.1, INSulin related ,Caenorhabditis elegans,73
+NP_508247.1, INSulin related ,Caenorhabditis elegans,126
+NP_507926.1, INSulin related ,Caenorhabditis elegans,94
+NP_494655.1, INSulin related ,Caenorhabditis elegans,98
+NP_494454.1, INSulin related ,Caenorhabditis elegans,218
+NP_493444.1, INSulin related ,Caenorhabditis elegans,120
+NP_493445.1, INSulin related ,Caenorhabditis elegans,110
+NP_493389.1, INSulin related ,Caenorhabditis elegans,124
+XP_042670992.1, insulin ,Centrocercus urophasianus,107
+NP_001035835.1, insulin, isoform 2 precursor ,Homo sapiens,200
+XP_037543690.1, insulin ,Nematolebias whitei,116
+XP_037543221.1, insulin ,Nematolebias whitei,106
+XP_032919433.1, insulin ,Catharus ustulatus,107
+XP_012683874.3, insulin ,Clupea harengus,196
+XP_018955433.1, insulin ,Cyprinus carpio,137
+XP_012681001.1, insulin ,Clupea harengus,118
+XP_042528552.1, insulin ,Dipodomys spectabilis,102
+XP_042337395.1, insulin ,Plectropomus leopardus,115
+XP_042300965.1, insulin ,Sceloporus undulatus,107
+XP_042287378.1, insulin ,Thunnus maccoyii,115
+XP_042287377.1, insulin ,Thunnus maccoyii,115
+XP_007902984.1, insulin ,Callorhinchus milii,113
+XP_024289867.1, insulin ,Oncorhynchus tshawytscha,105
+XP_040072605.1, insulin isoform X3 ,Ixodes scapularis,123
+XP_040072604.1, insulin isoform X3 ,Ixodes scapularis,123
+XP_040072603.1, insulin isoform X2 ,Ixodes scapularis,135
+XP_040072602.1, insulin isoform X1 ,Ixodes scapularis,147
+NP_001103242.1, insulin precursor ,Sus scrofa,108
+XP_027815630.1, insulin ,Ovis aries,105
+XP_006977353.1, insulin ,Peromyscus maniculatus bairdii,110
+XP_005916546.2, insulin ,Haplochromis burtoni,129
+XP_005951176.1, insulin ,Haplochromis burtoni,113
+XP_041947657.1, insulin ,Alosa sapidissima,119
+XP_041940757.1, insulin ,Alosa sapidissima,149
+XP_038173309.1, insulin ,Arvicola amphibius,110
+XP_038167308.1, insulin ,Arvicola amphibius,184
+XP_036903723.1, insulin ,Sturnira hondurensis,110
+XP_041894685.1, insulin ,Corvus kubaryi,137
+XP_041864533.1, insulin ,Melanotaenia boesemani,115
+XP_041807552.1, insulin ,Chelmon rostratus,116
+XP_002198969.2, insulin ,Taeniopygia guttata,137
+XP_041657839.1, insulin ,Cheilinus undulatus,120
+XP_041578098.1, insulin ,Vulpes lagopus,110
+XP_041425543.1, insulin ,Xenopus laevis,100
+XP_041521893.1, insulin ,Microtus oregoni,110
+XP_041337238.1, insulin ,Pyrgilauda ruficollis,137
+XP_041271073.1, insulin ,Onychostruthus taczanowskii,137
+XP_040985283.1, insulin ,Aquila chrysaetos chrysaetos,107
+XP_040985282.1, insulin ,Aquila chrysaetos chrysaetos,107
+XP_029030277.1, insulin isoform X2 ,Betta splendens,109
+XP_029030276.1, insulin isoform X1 ,Betta splendens,110
+XP_029030275.1, insulin isoform X1 ,Betta splendens,110
+XP_040908267.1, insulin ,Toxotes jaculatrix,156
+XP_040827010.1, insulin ,Ochotona curzoniae,105
+NP_001353985.1, insulin precursor ,Oryctolagus cuniculus,110
+XP_012968060.1, insulin ,Mesocricetus auratus,110
+NP_001008996.1, insulin preproprotein ,Pan troglodytes,110
+XP_040495583.1, insulin ,Ursus maritimus,109
+XP_040463727.1, LOW QUALITY PROTEIN: insulin ,Falco naumanni,139
+XP_040415493.1, insulin ,Cygnus olor,107
+XP_040322184.1, insulin ,Puma yagouaroundi,110
+XP_032894479.1, insulin ,Amblyraja radiata,114
+XP_040264806.1, insulin ,Bufo bufo,110
+NP_001269184.1, insulin precursor ,Ictidomys tridecemlineatus,110
+XP_040184408.1, insulin ,Rana temporaria,140
+XP_040139892.1, insulin ,Ictidomys tridecemlineatus,183
+XP_040111257.1, insulin ,Oryx dammah,105
+XP_040038797.1, insulin ,Gasterosteus aculeatus aculeatus,117
+XP_040006846.1, insulin ,Xiphias gladius,116
+XP_039924220.1, insulin ,Hirundo rustica,137
+XP_039888551.1, insulin ,Simochromis diagramma,113
+XP_028915363.1, insulin ,Ornithorhynchus anatinus,106
+XP_039696307.1, insulin ,Pteropus giganteus,110
+XP_039633717.1, insulin ,Perca fluviatilis,116
+XP_039631678.1, insulin ,Polypterus senegalus,113
+XP_039596069.1, insulin ,Polypterus senegalus,112
+XP_039584358.1, insulin ,Passer montanus,107
+XP_039505830.1, insulin ,Pimephales promelas,108
+XP_031615350.1, insulin ,Oreochromis aureus,113
+XP_010395059.2, insulin ,Corvus cornix cornix,137
+NP_001172055.1, insulin preproprotein ,Bos taurus,105
+NP_776351.2, insulin preproprotein ,Bos taurus,105
+NP_001166362.1, insulin precursor ,Cavia porcellus,110
+XP_039393777.1, insulin ,Mauremys reevesii,106
+XP_039237358.1, insulin isoform X3 ,Pipra filicauda,107
+XP_039237357.1, insulin isoform X2 ,Pipra filicauda,136
+XP_027579961.2, insulin isoform X1 ,Pipra filicauda,159
+XP_010329449.1, insulin ,Saimiri boliviensis boliviensis,108
+XP_039081000.1, insulin ,Hyaena hyaena,110
+XP_038844997.1, insulin ,Salvelinus namaycush,105
+XP_038620471.1, insulin ,Tachyglossus aculeatus,106
+XP_038563595.1, insulin ,Micropterus salmoides,160
+XP_038163412.1, insulin isoform X2 ,Cyprinodon tularosa,117
+XP_038163411.1, insulin isoform X1 ,Cyprinodon tularosa,140
+YP_009408005.1, Insulin metalloproteinase-like protein ,Eptesipox virus,596
+XP_021128209.3, insulin ,Anas platyrhynchos,141
+XP_037994723.1, insulin ,Motacilla alba alba,137
+XP_008002825.1, insulin isoform X2 ,Chlorocebus sabaeus,144
+XP_008002752.1, insulin isoform X1 ,Chlorocebus sabaeus,209
+XP_037835633.1, insulin ,Kryptolebias marmoratus,114
+XP_037834838.1, insulin ,Kryptolebias marmoratus,100
+XP_017296161.1, insulin ,Kryptolebias marmoratus,114
+XP_017276784.1, insulin ,Kryptolebias marmoratus,100
+XP_037587075.1, insulin ,Cebus imitator,108
+XP_037587074.1, insulin ,Cebus imitator,108
+XP_037696381.1, insulin ,Choloepus didactylus,106
+XP_017569410.2, insulin ,Pygocentrus nattereri,108
+XP_017552860.2, insulin ,Pygocentrus nattereri,142
+XP_037373285.1, LOW QUALITY PROTEIN: insulin ,Talpa occidentalis,111
+XP_037323332.1, insulin ,Pungitius pungitius,117
+XP_037257366.1, LOW QUALITY PROTEIN: insulin ,Falco rusticolus,139
+XP_037064779.1, insulin ,Peromyscus leucopus,110
+XP_028728226.1, insulin ,Peromyscus leucopus,110
+XP_037012244.1, insulin ,Artibeus jamaicensis,110
+XP_036976090.1, insulin ,Acanthopagrus latus,116
+XP_017524755.2, insulin ,Manis javanica,104
+XP_036731684.1, insulin ,Manis pentadactyla,104
+XP_036716824.1, insulin ,Balaenoptera musculus,110
+XP_036618541.1, insulin ,Trichosurus vulpecula,103
+XP_036417909.1, insulin ,Colossoma macropomum,108
+XP_036416687.1, insulin ,Colossoma macropomum,113
+XP_036408750.1, insulin ,Megalops cyprinoides,115
+XP_036354152.1, insulin isoform X1 ,Ochotona princeps,112
+XP_004599268.1, insulin isoform X2 ,Ochotona princeps,104
+XP_036240775.1, insulin ,Molothrus ater,137
+XP_036115849.1, insulin ,Molossus molossus,104
+XP_024139571.2, insulin isoform X1 ,Oryzias melastigma,154
+XP_024139573.1, insulin isoform X2 ,Oryzias melastigma,110
+XP_024121986.1, insulin ,Oryzias melastigma,104
+XP_024120213.1, insulin ,Oryzias melastigma,113
+XP_016005248.1, insulin isoform X2 ,Rousettus aegyptiacus,111
+XP_016005239.1, insulin isoform X1 ,Rousettus aegyptiacus,112
+XP_036227253.1, insulin ,Bactrocera oleae,141
+XP_036032158.1, insulin ,Onychomys torridus,110
+XP_036032153.1, insulin ,Onychomys torridus,110
+XP_035998718.1, insulin ,Fundulus heteroclitus,116
+XP_035930639.1, insulin ,Halichoerus grypus,168
+XP_030189722.1, insulin ,Lynx canadensis,156
+XP_030187244.1, insulin ,Lynx canadensis,110
+XP_028373401.1, insulin ,Phyllostomus discolor,110
+XP_031172182.1, insulin ,Sander lucioperca,114
+XP_035798320.1, insulin isoform X1 ,Amphiprion ocellaris,124
+XP_023152986.1, insulin isoform X2 ,Amphiprion ocellaris,116
+XP_006785215.1, insulin ,Neolamprologus brichardi,113
+XP_035748752.1, insulin isoform X2 ,Egretta garzetta,107
+XP_009635579.2, insulin isoform X1 ,Egretta garzetta,139
+XP_021954597.1, insulin ,Folsomia candida,172
+XP_021954596.1, insulin ,Folsomia candida,172
+XP_035639066.1, insulin ,Oncorhynchus keta,105
+XP_027435732.1, insulin ,Zalophus californianus,110
+XP_025307639.1, insulin ,Canis lupus dingo,110
+XP_035522873.1, insulin ,Morone saxatilis,117
+XP_035480513.1, insulin ,Scophthalmus maximus,115
+XP_035395820.1, insulin ,Cygnus atratus,107
+XP_027265003.1, insulin ,Cricetulus griseus,110
+XP_003508128.1, insulin ,Cricetulus griseus,110
+XP_035253333.1, insulin ,Anguilla anguilla,115
+XP_035182783.1, insulin ,Oxyura jamaicensis,141
+XP_035119628.1, insulin ,Callithrix jacchus,108
+XP_035119627.1, insulin ,Callithrix jacchus,108
+XP_035034746.1, insulin ,Hippoglossus stenolepis,115
+XP_034868296.1, insulin ,Mirounga leonina,110
+XP_034787832.1, insulin ,Pan paniscus,204
+XP_034624978.1, insulin ,Trachemys scripta elegans,106
+XP_034624977.1, insulin ,Trachemys scripta elegans,106
+XP_002920166.2, insulin isoform X2 ,Ailuropoda melanoleuca,147
+XP_034501646.1, insulin isoform X1 ,Ailuropoda melanoleuca,148
+XP_034539846.1, insulin ,Notolabrus celidotus,116
+XP_034539845.1, insulin ,Notolabrus celidotus,116
+XP_034463098.1, insulin ,Hippoglossus hippoglossus,115
+XP_034463097.1, insulin ,Hippoglossus hippoglossus,115
+XP_027809292.1, insulin isoform X2 ,Marmota flaviventris,98
+XP_027809291.1, insulin isoform X1 ,Marmota flaviventris,110
+XP_034406367.1, insulin ,Cyclopterus lumpus,117
+XP_026767217.2, insulin ,Pangasianodon hypophthalmus,134
+XP_034147868.1, insulin ,Esox lucius,178
+XP_026777620.1, insulin ,Pangasianodon hypophthalmus,108
+XP_010887889.2, insulin ,Esox lucius,151
+XP_010895347.1, insulin ,Esox lucius,106
+XP_034033537.1, insulin ,Thalassophryne amazonica,117
+XP_005149257.1, insulin ,Melopsittacus undulatus,107
+XP_033834003.1, insulin ,Periophthalmus magnuspinnatus,113
+XP_019064851.1, insulin isoform X1 ,Fukomys damarensis,111
+XP_010633950.1, insulin isoform X2 ,Fukomys damarensis,110
+XP_004317908.1, insulin ,Tursiops truncatus,110
+NP_651391.1, target of brain insulin ,Drosophila melanogaster,657
+XP_033503967.1, insulin ,Epinephelus lanceolatus,116
+XP_015485235.1, insulin ,Parus major,137
+XP_004278117.1, insulin ,Orcinus orca,110
+XP_026213392.1, insulin ,Anabas testudineus,116
+XP_026184919.1, insulin ,Mastacembelus armatus,116
+XP_033062711.1, insulin ,Trachypithecus francoisi,110
+XP_030340681.1, insulin ,Strigops habroptila,107
+XP_032975469.1, insulin ,Rhinolophus ferrumequinum,123
+XP_032836479.1, insulin ,Petromyzon marinus,179
+XP_032735660.1, insulin ,Lontra canadensis,109
+XP_032626921.1, insulin ,Chelonoidis abingdonii,107
+XP_032009714.1, insulin isoform X3 ,Hylobates moloch,98
+XP_032009713.1, insulin isoform X2 ,Hylobates moloch,110
+XP_032009712.1, insulin isoform X2 ,Hylobates moloch,110
+XP_032009711.1, insulin isoform X2 ,Hylobates moloch,110
+XP_032009710.1, insulin isoform X1 ,Hylobates moloch,203
+XP_032547324.1, insulin ,Chiroxiphia lanceolata,107
+XP_032547323.1, insulin ,Chiroxiphia lanceolata,107
+XP_032547322.1, insulin ,Chiroxiphia lanceolata,107
+XP_032496799.1, insulin ,Phocoena sinus,110
+XP_032496798.1, insulin ,Phocoena sinus,110
+XP_032431681.1, insulin isoform X2 ,Xiphophorus hellerii,117
+XP_032431680.1, insulin isoform X1 ,Xiphophorus hellerii,140
+XP_032383978.1, insulin ,Etheostoma spectabile,111
+XP_032346050.1, insulin ,Camelus ferus,110
+XP_032346048.1, insulin isoform X1 ,Camelus ferus,216
+XP_015719310.1, insulin ,Coturnix japonica,107
+XP_032269837.1, insulin ,Phoca vitulina,110
+XP_032214204.1, insulin ,Mustela erminea,109
+XP_032214202.1, insulin ,Mustela erminea,109
+XP_032124370.1, insulin ,Sapajus apella,108
+XP_032124369.1, insulin ,Sapajus apella,108
+XP_032087330.1, insulin ,Thamnophis elegans,104
+XP_032043534.1, insulin ,Aythya fuligula,107
+XP_031969199.1, insulin ,Corvus moneduloides,137
+XP_023039288.1, insulin isoform X3 ,Piliocolobus tephrosceles,98
+XP_023039287.1, insulin isoform X2 ,Piliocolobus tephrosceles,147
+XP_023039286.1, insulin isoform X1 ,Piliocolobus tephrosceles,110
+XP_023039285.1, insulin isoform X1 ,Piliocolobus tephrosceles,110
+XP_031696538.1, insulin ,Anarrhichthys ocellatus,117
+XP_020320473.2, insulin ,Oncorhynchus kisutch,107
+XP_020340217.1, insulin ,Oncorhynchus kisutch,105
+XP_031546921.1, insulin ,Vicugna pacos,110
+XP_003909425.2, insulin isoform X2 ,Papio anubis,110
+XP_009183614.2, insulin isoform X2 ,Papio anubis,110
+XP_017803627.2, insulin isoform X1 ,Papio anubis,147
+XP_003206326.1, insulin ,Meleagris gallopavo,107
+XP_031469737.1, insulin ,Phasianus colchicus,107
+XP_021382452.1, insulin ,Lonchura striata domestica,107
+XP_031303797.1, insulin ,Camelus dromedarius,110
+XP_031303795.1, insulin ,Camelus dromedarius,216
+XP_031244808.1, insulin isoform X1 ,Mastomys coucha,357
+XP_031244807.1, insulin isoform X1 ,Mastomys coucha,357
+XP_031244806.1, insulin isoform X1 ,Mastomys coucha,357
+XP_031244805.1, insulin isoform X1 ,Mastomys coucha,357
+XP_031244804.1, insulin isoform X1 ,Mastomys coucha,357
+XP_031244803.1, insulin isoform X1 ,Mastomys coucha,357
+XP_005427262.2, insulin ,Geospiza fortis,137
+XP_018891846.1, insulin isoform X2 ,Gorilla gorilla gorilla,98
+XP_018891845.1, insulin isoform X1 ,Gorilla gorilla gorilla,110
+XP_006750158.1, insulin ,Leptonychotes weddellii,110
+XP_004050476.1, insulin isoform X1 ,Gorilla gorilla gorilla,110
+XP_004050475.1, insulin isoform X1 ,Gorilla gorilla gorilla,110
+XP_030806013.1, insulin ,Camarhynchus parvulus,137
+XP_010380355.2, insulin ,Rhinopithecus roxellana,110
+XP_030688938.1, insulin ,Globicephala melas,110
+XP_030667342.1, insulin isoform X3 ,Nomascus leucogenys,98
+XP_030667341.1, insulin isoform X2 ,Nomascus leucogenys,110
+XP_030667340.1, insulin isoform X1 ,Nomascus leucogenys,203
+XP_012352077.1, insulin isoform X2 ,Nomascus leucogenys,110
+XP_003281399.1, insulin isoform X2 ,Nomascus leucogenys,110
+XP_030638218.1, insulin ,Chanos chanos,108
+XP_022446765.1, insulin isoform X2 ,Delphinapterus leucas,98
+XP_022446763.1, insulin isoform X1 ,Delphinapterus leucas,110
+XP_022446762.1, insulin isoform X1 ,Delphinapterus leucas,110
+XP_030602835.1, insulin ,Archocentrus centrarchus,113
+XP_030418485.1, insulin ,Gopherus evgoodei,106
+XP_030307253.1, insulin isoform X2 ,Calypte anna,139
+XP_008502921.1, insulin isoform X1 ,Calypte anna,107
+XP_030293053.1, insulin ,Sparus aurata,116
+XP_009100443.2, insulin ,Serinus canaria,137
+XP_030055378.1, insulin ,Microcaecilia unicolor,106
+XP_008920278.2, insulin isoform X2 ,Manacus vitellinus,131
+XP_017931500.1, insulin isoform X1 ,Manacus vitellinus,159
+XP_017931499.1, insulin isoform X1 ,Manacus vitellinus,159
+XP_029956970.1, insulin ,Salarias fasciatus,116
+XP_029770545.1, insulin ,Suricata suricatta,110
+XP_024064638.1, insulin ,Terrapene carolina triunguis,107
+XP_029704670.1, insulin isoform X2 ,Takifugu rubripes,114
+XP_029704669.1, insulin isoform X2 ,Takifugu rubripes,114
+XP_029546047.1, insulin ,Salmo trutta,105
+XP_029481856.1, insulin ,Oncorhynchus nerka,105
+XP_029438830.1, insulin ,Rhinatrema bivittatum,106
+XP_008837453.1, insulin ,Nannospalax galili,159
+XP_008837427.1, insulin isoform X2 ,Nannospalax galili,98
+XP_008837426.1, insulin isoform X1 ,Nannospalax galili,110
+XP_011213888.1, insulin ,Bactrocera dorsalis,127
+XP_029374951.1, insulin ,Echeneis naucrates,116
+XP_029374950.1, insulin ,Echeneis naucrates,116
+XP_001949438.1, insulin ,Acyrthosiphon pisum,122
+XP_029303499.1, insulin ,Cottoperca gobio,110
+XP_015678733.1, insulin ,Protobothrops mucrosquamatus,104
+XP_018607388.1, insulin ,Scleropages formosus,111
+XP_029063438.1, insulin isoform X2 ,Monodon monoceros,98
+XP_029063437.1, insulin isoform X1 ,Monodon monoceros,110
+XP_029063436.1, insulin isoform X1 ,Monodon monoceros,110
+XP_010160985.1, insulin ,Antrostomus carolinensis,109
+XP_028898058.1, insulin ,Zeugodacus cucurbitae,127
+XP_011187293.1, insulin ,Zeugodacus cucurbitae,127
+XP_028688882.1, insulin ,Macaca mulatta,110
+XP_028451989.1, insulin ,Perca flavescens,114
+XP_028451988.1, insulin ,Perca flavescens,114
+XP_023973345.1, insulin ,Physeter catodon,110
+XP_028277043.1, insulin ,Parambassis ranga,116
+XP_007171218.2, LOW QUALITY PROTEIN: insulin ,Balaenoptera acutorostrata scammoni,112
+XP_008158493.1, insulin ,Eptesicus fuscus,106
+XP_027974059.1, insulin ,Eumetopias jubatus,110
+XP_027888321.1, insulin isoform X2 ,Xiphophorus couchianus,117
+XP_027888320.1, insulin isoform X1 ,Xiphophorus couchianus,140
+XP_027724482.1, insulin ,Vombatus ursinus,103
+XP_027744603.1, insulin isoform X2 ,Empidonax traillii,131
+XP_027744602.1, insulin isoform X1 ,Empidonax traillii,159
+XP_005439170.2, LOW QUALITY PROTEIN: insulin ,Falco cherrug,139
+XP_027642375.1, insulin ,Falco peregrinus,107
+XP_006141129.1, insulin ,Tupaia chinensis,110
+XP_005237374.1, insulin ,Falco peregrinus,107
+XP_027507160.1, insulin isoform X2 ,Corapipo altera,134
+XP_027507157.1, insulin isoform X1 ,Corapipo altera,159
+XP_027507156.1, insulin isoform X1 ,Corapipo altera,159
+XP_027530044.1, insulin isoform X2 ,Neopelma chrysocephalum,134
+XP_027530043.1, insulin isoform X1 ,Neopelma chrysocephalum,159
+XP_027530042.1, insulin isoform X1 ,Neopelma chrysocephalum,159
+XP_027388249.1, insulin ,Bos indicus x Bos taurus,105
+XP_027129025.1, insulin ,Larimichthys crocea,116
+XP_027129024.1, insulin isoform X2 ,Larimichthys crocea,102
+XP_027129023.1, insulin isoform X2 ,Larimichthys crocea,102
+XP_027129022.1, insulin isoform X1 ,Larimichthys crocea,144
+XP_027140289.1, insulin isoform X2 ,Larimichthys crocea,97
+XP_027140288.1, insulin isoform X1 ,Larimichthys crocea,111
+XP_027140273.1, insulin isoform X1 ,Larimichthys crocea,111
+XP_027140266.1, insulin isoform X1 ,Larimichthys crocea,111
+XP_027140260.1, insulin isoform X1 ,Larimichthys crocea,111
+XP_010735398.2, insulin isoform X1 ,Larimichthys crocea,111
+XP_026946238.1, insulin ,Lagenorhynchus obliquidens,110
+XP_026901706.1, insulin ,Acinonyx jubatus,110
+XP_026706369.1, insulin isoform X2 ,Athene cunicularia,107
+XP_026706368.1, insulin isoform X1 ,Athene cunicularia,139
+XP_005351628.2, insulin ,Microtus ochrogaster,110
+XP_005486624.2, insulin ,Zonotrichia albicollis,137
+XP_026562248.1, insulin ,Pseudonaja textilis,103
+XP_026523926.1, insulin ,Notechis scutatus,103
+XP_026269446.1, insulin isoform X2 ,Urocitellus parryii,98
+XP_026269445.1, insulin isoform X1 ,Urocitellus parryii,110
+XP_026105430.1, insulin ,Carassius auratus,137
+XP_026037107.1, insulin ,Astatotilapia calliptera,113
+YP_232960.1, insulin metalloproteinase-like protein ,Vaccinia virus,591
+XP_025948497.1, insulin ,Dromaius novaehollandiae,107
+XP_025934794.1, insulin ,Apteryx rowi,107
+XP_025892600.1, insulin ,Nothoprocta perdicaria,107
+XP_025859971.1, insulin ,Vulpes vulpes,110
+XP_025771327.1, insulin ,Puma concolor,156
+XP_003445871.3, insulin ,Oreochromis niloticus,111
+XP_003458727.1, insulin ,Oreochromis niloticus,113
+XP_025735270.1, insulin ,Callorhinus ursinus,110
+XP_011258536.1, insulin ,Camponotus floridanus,130
+XP_025211016.1, insulin isoform X5 ,Theropithecus gelada,98
+XP_025211015.1, insulin isoform X4 ,Theropithecus gelada,110
+XP_025211014.1, insulin isoform X4 ,Theropithecus gelada,110
+XP_025211013.1, insulin isoform X4 ,Theropithecus gelada,110
+XP_025211012.1, insulin isoform X3 ,Theropithecus gelada,135
+XP_025211011.1, insulin isoform X2 ,Theropithecus gelada,147
+XP_025211009.1, insulin isoform X1 ,Theropithecus gelada,234
+XP_006134976.1, insulin ,Pelodiscus sinensis,106
+XP_006033708.1, insulin ,Alligator sinensis,107
+XP_007424294.1, insulin ,Python bivittatus,104
+XP_008331679.1, insulin ,Cynoglossus semilaevis,113
+XP_015316816.2, insulin isoform X1 ,Bos taurus,221
+XP_006911039.1, insulin ,Pteropus alecto,110
+XP_014269109.1, insulin ,Maylandia zebra,113
+XP_011719621.1, insulin isoform X2 ,Macaca nemestrina,98
+XP_011719620.1, insulin isoform X1 ,Macaca nemestrina,110
+XP_011719619.1, insulin isoform X1 ,Macaca nemestrina,110
+XP_011719618.1, insulin isoform X1 ,Macaca nemestrina,110
+XP_004541197.1, insulin ,Maylandia zebra,111
+XP_024605022.1, insulin ,Neophocaena asiaeorientalis asiaeorientalis,110
+XP_024605021.1, insulin ,Neophocaena asiaeorientalis asiaeorientalis,110
+XP_024498634.1, Insulin-like domain and Insulin family-containing protein ,Strongyloides ratti,130
+XP_016775240.1, insulin isoform X1 ,Pan troglodytes,204
+XP_024110668.1, insulin isoform X3 ,Pongo abelii,98
+XP_024110667.1, insulin isoform X2 ,Pongo abelii,110
+XP_024110666.1, insulin isoform X2 ,Pongo abelii,110
+XP_024110665.1, insulin isoform X2 ,Pongo abelii,110
+XP_024110664.1, insulin isoform X1 ,Pongo abelii,203
+XP_023824401.1, insulin ,Salvelinus alpinus,142
+XP_023868289.1, insulin ,Salvelinus alpinus,105
+XP_004084370.2, insulin ,Oryzias latipes,187
+XP_023784615.1, insulin ,Cyanistes caeruleus,107
+XP_023784614.1, insulin ,Cyanistes caeruleus,107
+XP_023680902.1, insulin isoform X2 ,Paramormyrops kingsleyae,103
+XP_023680891.1, insulin isoform X1 ,Paramormyrops kingsleyae,110
+XP_006109582.1, insulin ,Myotis lucifugus,105
+XP_012414863.1, insulin ,Trichechus manatus latirostris,156
+XP_004389446.1, insulin ,Trichechus manatus latirostris,106
+XP_004627141.1, insulin ,Octodon degus,109
+XP_023510474.1, insulin ,Equus caballus,110
+XP_013006103.1, insulin isoform X1 ,Cavia porcellus,110
+XP_003422420.1, insulin ,Loxodonta africana,105
+XP_012665959.1, insulin isoform X2 ,Otolemur garnettii,98
+XP_003798420.1, insulin isoform X1 ,Otolemur garnettii,110
+XP_023259768.1, insulin ,Seriola lalandi dorsalis,117
+XP_023259767.1, insulin ,Seriola lalandi dorsalis,117
+XP_023198434.1, insulin isoform X1 ,Xiphophorus maculatus,140
+XP_005813858.1, insulin isoform X2 ,Xiphophorus maculatus,117
+XP_020714387.1, insulin ,Ceratitis capitata,127
+XP_004525064.1, insulin ,Ceratitis capitata,127
+XP_022600464.1, insulin ,Seriola dumerili,116
+XP_007261072.1, insulin ,Astyanax mexicanus,108
+XP_022363428.1, insulin ,Enhydra lutris kenyoni,109
+XP_022077343.1, insulin ,Acanthochromis polyacanthus,116
+XP_012311615.1, insulin ,Aotus nancymaae,108
+XP_021490469.1, insulin isoform X2 ,Meriones unguiculatus,110
+XP_021490460.1, insulin isoform X2 ,Meriones unguiculatus,110
+XP_021490452.1, insulin isoform X1 ,Meriones unguiculatus,134
+XP_021256644.1, insulin ,Numida meleagris,107
+XP_021256643.1, insulin ,Numida meleagris,107
+XP_021155316.1, insulin isoform X2 ,Columba livia,107
+XP_021155312.1, insulin isoform X2 ,Columba livia,107
+XP_005499300.2, insulin isoform X1 ,Columba livia,139
+XP_004852149.1, insulin ,Heterocephalus glaber,110
+XP_020936937.1, insulin isoform X1 ,Sus scrofa,175
+XP_020826540.1, insulin ,Phascolarctos cinereus,103
+XP_020738946.1, insulin isoform X2 ,Odocoileus virginianus texanus,105
+XP_020644463.1, insulin ,Pogona vitticeps,107
+XP_020470849.1, insulin ,Monopterus albus,116
+XP_020376878.1, insulin ,Rhincodon typus,113
+XP_012599453.1, insulin ,Microcebus murinus,110
+XP_020024407.1, insulin ,Castor canadensis,110
+NP_001093706.1, insulin precursor ,Xenopus tropicalis,106

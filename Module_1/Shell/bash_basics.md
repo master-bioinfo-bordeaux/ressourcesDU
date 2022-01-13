@@ -40,7 +40,7 @@ Pour cette série d'exercices sur le shell Unix, nous utiliserons un émulateur 
 
 ➔ Le prompt qui contient plusieurs informations:
 
-- (i) le nom (en vert) du compte et de l'ordinateur sur lequel vous travaillez. Ici, votre compte se nomme root suivi du nom de la machine (ici localhost) suivi de votre position dans l'arborescence des fichiers (ici, ~/data ce qui signifie dans le sous-répertoire data/ du dossier personnel (~ symbolise le dossier personnel appelé généralement Home).
+- (i) le nom (en vert) du compte et de l'ordinateur sur lequel vous travaillez. Ici, votre compte se nomme `root` suivi du nom de la machine (ici `localhost`) suivi de votre position dans l'arborescence des fichiers (ici, `~/data` ce qui signifie dans le sous-répertoire `data/` du dossier personnel (<kbd>~</kbd> symbolise le dossier personnel appelé généralement Home).
 - (ii) Un séparateur (ici un dièse mais en général, c'est un dollar).
 - (iii) le curseur (ici, un tiret ou un carré blanc clignotant selon les versions de shell).
 

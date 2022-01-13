@@ -510,7 +510,7 @@ Après duplication...
 ACGTACGTACGTACGTACGTACGT
 ```
 
-## Exercice: Faire la même chose pour cette ligne et dupliquez les lignes plusieurs fois.
+### Exercice: Faire la même chose pour cette ligne et dupliquez les lignes plusieurs fois.
 
 ```
 > Test d'une séquence au format FASTA

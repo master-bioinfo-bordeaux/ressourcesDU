@@ -84,18 +84,19 @@ function randint(n) {
 }
 ```
 
-The multiplication produces a random real number greater than zero and less than n. We then make it an integer (using int) between zero and n - 1, inclusive. Here is an example where a similar function is used to produce random integers between one and n. This program prints a new random number for each input record.
-awk 
+La formule utilisée ci-dessus permet d'avoir un nombre entier (grâce à `int(..)`) bete ntreween `zero` and `n - 1`, inclus. 
 
+Voici un autre exemple avec la simulation d'un lancer de dé à 6 faces
 ```awk
 # Function to roll a simulated die.
-function roll(n) { return 1 + int(rand() * n) }
+function roll(n) { 
+    return 1 + int(rand() * n);
+}
 
 # Roll 3 six-sided dice and
 # print total number of points.
 {
-      printf("%d points\n",
-             roll(6)+roll(6)+roll(6))
+    printf("%d points\n",roll(6)+roll(6)+roll(6));
 }
 ```
 

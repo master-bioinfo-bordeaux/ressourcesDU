@@ -229,12 +229,13 @@ ls -lh
 ```
 
 > **Note**: Aide en ligne: Généralement, on a une aide sur les commandes de deux manières possibles:
-> ```bash
+```bash
   # Option 1
   ls --help
   # Option 2
   man ls
-  ```
+```
+
 Dans l'émulateur, les pages manual affichables via la commande man n'ont pas été installées. Seule la 1ère méthode est donc disponible
 On peut filtrer les fichiers qu'on souhaite lister en utilisant les caractères joker '*' et/ou '?'.
 Le caractère étoile remplace un ou plusieurs caractères.
@@ -250,10 +251,14 @@ ls hello*
 ls ?e*
 ```
 
-1.2. Affichez le répertoire courant (Print Working Directory) - pwd
+### 1.2. Affichez le répertoire courant (Print Working Directory) - pwd
+
 ```bash
 pwd
-1.3. Se déplacer dans le système de fichiers (Change working Directory) - cd
+```
+
+### 1.3. Se déplacer dans le système de fichiers (Change working Directory) - cd
+```bash
 # cd into one of the directories you see when you type
 ls -F
 cd nbench
@@ -274,9 +279,10 @@ Les raccourcis à connaître pour se déplacer.
 /  Root of the file system (like C:\ in Windows)
 ```
 
-1.4. Exercice
-Question 1: Dans le répertoire nbench/ combien y a t-il de fichiers?
-Question 2: Dans le répertoire nbench/ combien y a t-il de fichiers qui commence par la lettre 'n' et qui ont une extension 'h'?
+### 1.4. Exercice
+
+- **Question 1**: Dans le répertoire nbench/ combien y a t-il de fichiers?
+- **Question 2**: Dans le répertoire nbench/ combien y a t-il de fichiers qui commence par la lettre 'n' et qui ont une extension 'h'?
 
 # E. Exercice: Où suis-je?     
 
@@ -293,7 +299,7 @@ original pnas_final pnas_sub
 > **Source**: https://datacarpentry.org/shell-genomics/02-the-filesystem/index.html
 
 
-# D.Manipulation de fichiers
+# F.Manipulation de fichiers (suite)
 
 ## 2. Files - Create, edit, delete files and directories: mkdir, nano, touch, cp, mv, rm, rmdir, cat, head, less
 Pour s'amuser un peu, on va créer un répertoire nommé test.
@@ -353,11 +359,14 @@ Pour déplacer et/ou renommer un fichier, on utilise la commande mv (MoVe)
 Pour détruire un fichier, on utilise la commande rm (ReMove)
 Pour détruire un répertoire, on utilise la commande rmdir
 
+```bash
 cd
 mkdir backdir
 mv backup.fasta backdir
+```
+
 A ce stade, quelle est l'arborescence de vos fichiers?
-Note: Vous pouvez utiliser la commande ls avec l'argument -R (pour récurrence) pour visualiser toute l'arborescence de votre répertoire personnel.
+> **Note**: Vous pouvez utiliser la commande ls avec l'argument -R (pour récurrence) pour visualiser toute l'arborescence de votre répertoire personnel.
 
 Maintenant, faire le ménage...
 
@@ -370,17 +379,18 @@ rm backdir/backup.fasta
 rmdir backdir
 ```
 
-# Editeur de Texte: nano     
-3. Nano-Editeur de texte - nano
-plutôt que touch, on peut utiliser un éditeur de texte pour créer un fichier et écrire/modifier son contenu.
+# G. Editeur de Texte: nano  
 
+Plutôt que `touch`, on peut utiliser un éditeur de texte pour créer un fichier et écrire/modifier son contenu.
+```bash
 cd
 nano text.txt
+```
 Une fenêtre s'ouvre. Vous pouvez tapez votre texte. Dans la partie inférieure, vous avez la barre de menu.
 
 
 
-Fig. 1: Capture d'écran de la zone de texte de nano + sa barre de menu. Source: https://www.tecmint.com/learn-nano-text-editor-in-linux/
+**Fig. 1**: Capture d'écran de la zone de texte de nano + sa barre de menu. Source: https://www.tecmint.com/learn-nano-text-editor-in-linux/
 
 Comme nous sommes en ligne de commande, la souris est inopérante. On se déplace avec les flèches du clavier, la touche Home, Fin,
 
@@ -388,11 +398,13 @@ Pour toutes les commandes de sauvegarde du texte fichier, vous avez une ligne d'
 
 Par exemple, pour sauvegarder votre fichier, vous devez faire Ctrl + S.
 
-2. Les raccourcis clavier
+## 2. Les raccourcis clavier
+
 Toutes les commandes sont ici [Link]
 
 Quelques commandes très utiles disponibles sur le site de nano.
 
+```
 File handling
 Ctrl+S  Save current file
 Ctrl+O	Offer to write file ("Save as")
@@ -440,24 +452,23 @@ Alt+↓	Scroll viewport down
 
 Information
 Ctrl+G	Display help text
+```
 
 
-Table de contenu
-Contenu 1:	Previous
-Aller 1:	Page précédente
-Contenu 2:	Next
-Aller 2:	Page suivante
-Importer des questions | Ajouter une page de contenu | Ajouter un groupe | Ajouter une fin de branchement | Ajouter une fin de groupe | Ajouter une page question ici
-Exercice avec l'éditeur nano     
+# H. Exercice avec l'éditeur nano     
 On se propose de créer un fichier FASTA contenant une séquence
 
 Se placer dans son HOME en tapant la commande cd
 
-1. Exécuter nano
+## 1. Exécuter nano
+```bash
 nano test.fasta
+```
+
 Une zone de texte s'affiche avec la barre de menu dans la partie inférieure contenant les principaux raccourcis
 
-2. Obtenir de l'aide
+## 2. Obtenir de l'aide
+
 Pour avoir accès à tous les raccourcis, tapez Ctrl+G (Get help).
 
 Pour quitter l'aide en ligne, faire Ctrl+X (c'est indiqué dans la barre de menu inférieure sous la forme ^X: Close).
@@ -465,23 +476,34 @@ Pour quitter l'aide en ligne, faire Ctrl+X (c'est indiqué dans la barre de menu
 
 Fig. 1: Capture d'écran de l'aide ne ligne. Source: https://www.linuxjournal.com/content/linux-command-line-interface-introduction-guide.
 
-3.Saisie de texte
+## 3.Saisie de texte
+
 Il suffit de taper le texte, aucune commande n'est nécessaire. Pour corriger, modifier du texte, il faut déplacer le curseur à l'aide des flèches (pas de souris possible).
+```
 > Test d'une séquence au format FASTA
 ACGT
-4. Sélection, copier, coller de texte
+```
+
+## 4. Sélection, copier, coller de texte
+
 Déplacez-vous avec les flèches au début de la ligne (avant la lettre A).
 La 1ère chose est de définir une marque de début de sélection (Ctrl + 6)
 Pour définir la zone de sélection, déplacez-vous avec les flèches (gauche,droite, haut, bas) pour surligner les 4 lettres ACGT
 Ensuite, faire un couper (Ctrl+K) et faire des copier (Ctrl+U).
+
+```
 > Test d'une séquence au format FASTA
 ACGT
+```
 Après duplication...
-
+```
 > Test d'une séquence au format FASTA
 ACGTACGTACGTACGTACGTACGT
-Exercice: Faire la même chose pour cette ligne et dupliquez les lignes plusieurs fois.
+```
 
+## Exercice: Faire la même chose pour cette ligne et dupliquez les lignes plusieurs fois.
+
+```
 > Test d'une séquence au format FASTA
 ACGTACGTACGTACGTACGTACGT
 ACGTACGTACGTACGTACGTACGT
@@ -489,66 +511,35 @@ ACGTACGTACGTACGTACGTACGT
 ACGTACGTACGTACGTACGTACGT
 ACGTACGTACGTACGTACGTACGT
 ACGTACGTACGTACGTACGTACGT
-Note: Pensez à sélectionner aussi la fin de la ligne.
-5. Sauvegarder le contenu d'un fichier
+```
+
+> **Note**: Pensez à sélectionner aussi la fin de la ligne.
+ 
+## 5. Sauvegarder le contenu d'un fichier
+
 Plusieurs options
 
-Ctrl+S pour sauvegarder le fichier existant
-Ctrl+O pour sauvegarder sous un nouveau nom
-Note: ATTENTION!! Il n'y a aucune sauvegarde automatique de votre texte, pensez à le faire régulièrement (Ctrl+S)
-6. Quittez nano
-Ctrl+X permet de sortir de nano.
+<kbd>Ctrl</kbd>+<kbd>S</kbd> pour sauvegarder le fichier existant
+<kbd>Ctrl</kbd>+<kbd>O</kbd> pour sauvegarder sous un nouveau nom
 
-Attention!! Si vous n'avez pas sauvegardé votre texte au préalable, une confirmation (Y, N ou Ctrl+C) est demandée:
+> **Note**: ATTENTION!! Il n'y a aucune sauvegarde automatique de votre texte, pensez à le faire régulièrement (Ctrl+S)
 
+## 6. Quittez nano
+<kbd>Ctrl</kbd>+<kbd>X</kbd> permet de sortir de nano.
+
+**Attention!!** Si vous n'avez pas sauvegardé votre texte au préalable, une confirmation (Y, N ou Ctrl+C) est demandée:
+
+```
 Save modified buffer?                                                                 
  Y Yes
  N No         ^C Cancel
+```
 
-7. Vérifiez le contenu de votre fichier
+## 7. Vérifiez le contenu de votre fichier
+
 Vous pouvez faire un less pour voir le contenu du fichier.
+```bash
 less test.fasta
-
-Table de contenu
-Contenu 1:	Previous
-Aller 1:	Page précédente
-Contenu 2:	End
-Aller 2:	Fin de la leçon
-Importer des questions | Ajouter une page de contenu | Ajouter un groupe | Ajouter une fin de branchement | Ajouter une fin de groupe | Ajouter une page question ici
-Solution: Où suis-je?     
-Exercice
-A partir du diagramme ci-dessous, si la commande pwd affiche /Users/thing, qu'affiche la commande ls ../backup [ choix 1,2,3,4]?
-
-../backup: No such file or directory
-2021-12-01 2022-01-08 2022-01-27
-2021-12-01/ 2022-01-08/ 2022-01-27/
-original pnas_final pnas_sub
-La bonne solution est la 4. Pour comprendre, comment cela fonctionne, on va remplacer la commande ls par cd (change directory). Vous êtes au départ dans /Users/thing, si vous faites cd .., vous "remontez" dans /Users, puis cd backup, vous "redescendez" dans le répertoire backup/. Ce que vous listez est donc les trois répertoires original, pnas_final et pnas_sub.
+```
 
 
-
-Source: https://datacarpentry.org/shell-genomics/02-the-filesystem/index.html
-Table de contenu
-Contenu 1:	Return
-Aller 1:	Exercice: Où suis-je?
-Importer des questions | Ajouter une page de contenu | Ajouter un groupe | Ajouter une fin de branchement | Ajouter une fin de groupe | Ajouter une page question ici
-Solutions seq     
-Il existe une commande seq qui génère automatiquement une série de nombres entiers
-
-Pour avoir la documentation de cette commande, pensez à utiliser l'argument --help
-
-# seq --help
-Question 1: Générer une série de nombres de 1 à 10.
-seq 10
-Question 2: Générer une série de nombres de 10 à 20
-seq 10 20
-Question 3: Générer les nombres pairs de 0 à 10 inclus
-seq 0 2 10
-
-Question 4: Générer les nombres impairs de 0 à 10 inclus en une seule ligne séparée par des virgules
-seq -s "," 1 2 10
-ou avec un argument long...
-
-seq --separator="," 1 2 10
-Question 4: Générer les nombres multiples de 13 de 0 à 100 avec un (ou plusieurs zéros devant)
-seq -w 0 13 100

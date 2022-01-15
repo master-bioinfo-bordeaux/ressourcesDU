@@ -602,10 +602,111 @@ Options            Description
 --output-delimiter Par défaut, la commande CUT utilise le délimiteur d'entrée en tant que délimiteur de sortie,
 mais vous pouvez modifier ce comportement en utilisant cette option.
 ```
+Par exemple sur le fichier `data/fasta/insulins.csv`, on souhaite extraire les colonnes du nom de l'organisme ainsi que la longueur de la séquence.
 
+```bash
+$ cd
+$ head -n 1 data/fasta/insulins.csv
+id,title,organism,length
+# On a 4 colonnes.
+# Les colonnes qui nous intéressent sont la 3 et la 4
+$ cut -d ',' -f 3,4 data/fasta/insulins.csv | head -n 5
+organism,length
+Salmo salar,105
+Salmo salar,139
+Homo sapiens,110
+Homo sapiens,110
+```
   
 ## 2. La commande paste
 
+```
+Utilisation : paste [OPTION]... [FICHIER]...
+Écrire séquentiellement les lignes correspondantes de chaque FICHIER, séparées par des tabulations, vers la sortie standard.
+Sans FICHIER ou quand FICHIER est -, lire l'entrée standard.
+
+Les arguments obligatoires pour les options longues le sont aussi pour les options courtes.
+  -d, --delimiters=LIST   utiliser les caractères de LIST au lieu de tabulations
+  -s, --serial            copier un seul fichier à la fois au lieu de le faire
+                            en parallèle
+  -z, --zero-terminated    le délimiteur de lignes est l'octet NUL au lieu
+                            du saut de ligne
+      --help     afficher l'aide et quitter
+      --version  afficher des informations de version et quitter
+```
+
 # J. Commandes sort et uniq
 
+## 1. La commande sort
 
+On souhaite extraire les organismes et les trier par ordre alphabétique.
+
+```bash
+$ cd
+$ head -n 1 data/fasta/insulins.csv
+id,title,organism,length
+# On a 4 colonnes.
+# La colonne qui nous intéresse est la 3
+$ cut -d ',' -f 3 data/fasta/insulins.csv |  tail -n +2 | sort | tail -n 5
+Xiphophorus maculatus
+Zalophus californianus
+Zeugodacus cucurbitae
+Zeugodacus cucurbitae
+Zonotrichia albicollis
+```
+
+## 2. La commande uniq 
+
+```
+Utilisation : uniq [OPTION]... [ENTRÉE [SORTIE]]
+Filtrer les lignes adjacentes correspondantes depuis ENTRÉE (ou l'entrée standard), en écrivant dans SORTIE (ou la sortie standard).
+
+Sans option, les lignes correspondantes sont fusionnées sur la première occurrence.
+
+Les arguments obligatoires pour les options longues le sont aussi pour les options courtes.
+  -c, --count           préfixer les lignes par le nombre d'occurrences
+  -d, --repeated        n'afficher que les lignes ayant des duplicatas, une
+                          pour chaque groupe
+  -D                    afficher toutes les lignes en double
+      --all-repeated[=MÉTHODE]  comme -D mais les groupes peuvent être
+                                  séparés par une ligne vide :
+                                  METHOD={none(par défaut),prepend,separate}
+  -f, --skip-fields=N   ne pas comparer les N premiers champs
+      --group[=MÉTHODE]  montrer tous les éléments, en séparant les groupes par
+                          une ligne vide ; valeurs possibles pour MÉTHODE :
+                          none (par défaut), prepend, append ou both
+  -i, --ignore-case     ignorer les différences de casse à la comparaison
+  -s, --skip-chars=N    éviter de comparer les N premiers caractères
+  -u, --unique          n'afficher que les lignes uniques
+  -z, --zero-terminated     le délimiteur de lignes est l'octet NUL, pas le
+                              saut de ligne
+  -w, --check-chars=N   ne pas comparer plus de N caractères dans les lignes
+      --help     afficher l'aide et quitter
+      --version  afficher des informations de version et quitter
+```
+
+Elle sert à supprimer les doublons et à compter le nombre d'occurrences.
+
+```bash
+$ cd
+$ cut -d ',' -f 3 data/fasta/insulins.csv |  tail -n +2 | sort | uniq | tail -n 5
+Xiphophorus hellerii
+Xiphophorus maculatus
+Zalophus californianus
+Zeugodacus cucurbitae
+Zonotrichia albicollis
+```
+
+```bash
+$ cd
+$ cut -d ',' -f 3 data/fasta/insulins.csv |  tail -n +2 | sort | uniq -c | tail -n 5
+      2 Xiphophorus hellerii
+      2 Xiphophorus maculatus
+      1 Zalophus californianus
+      2 Zeugodacus cucurbitae
+      1 Zonotrichia albicollis
+```
+
+**Question**: On voudrait savoir si toutes les séquences dans le fichier sont bien des séquences d'insulines. Comment pourriez-vous le vérifier ?
+
+> **Note**: Pour des raisons de simplicité, on utilisera le fichier `insulins.csv` et non `insulins.fasta`

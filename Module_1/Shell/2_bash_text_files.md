@@ -37,23 +37,49 @@ Pour cette série d'exercices sur le shell Unix, nous utiliserons la séquence p
 
 **Fig.1**: Capture d'écran du shell Unix
 
-Téléchargez le fichier bioDU_archive.tar.xz dans la section Datasets ou cliquez ici [Link].
-Ensuite, sur la page https://copy.sh/v86,
-Cliquez sur le bouton Parcourir dans le panneau à droite à la rubrique Send Files to emulator.
-Sélectionnez le fichier bioDU_archive.tar.xz
-Dans le shell (2ème fenêtre), tapez les lignes suivantes pour décompresser l'archive.
-Il y a un gros fichier qui peut prendre un peu de temps...
+### 1. Création automatique de répertoires et de fichiers via un script `bash`
+
+1. Téléchargez le fichier `create_dataset.sh` dans la section Datasets ou cliquez ici [Link].
+1. Ensuite, sur la page https://copy.sh/v86,
+1. Cliquez sur le bouton Parcourir dans le panneau à droite à la rubrique Send Files to emulator.
+1. Sélectionnez le fichier `create_datasets.sh`
+1. Dans le shell (2ème fenêtre), tapez les lignes suivantes pour lancer correctement ce script.
+
 
 ```bash
 # On vérifie que le téléchargement s'est bien passé. 
 # Le fichier est dans la racine '/' 
 $ ls ..
-bioDU_archive.tar.xz
-# Décompresse l'archive 
-$ tar xf ../bioDU_archive.tar.gz
+create_dataset.sh
+$ cd
+# On lance le script pour générer automatiquement les fichiers et directories.
+$ sh ../create_dataset.sh
 # Vérifie que le dossier data/ est bien présent.
-$ ls
+$ ls -F
 data/
+```
+
+### 1. Dépôt des fichiers `insulins.fasta` et `insulins.csv`
+
+
+1. Deuxièmement, téléchargez les deux fichiers `insulins.fasta` et `insulins.csv`
+1. Ensuite, sur la page https://copy.sh/v86,
+1. Cliquez sur le bouton Parcourir dans le panneau à droite à la rubrique Send Files to emulator.
+1. Sélectionnez le fichier `insulins.fasta`
+2. Répétez l'opération de téléchargement pour le fichier `insulins.csv`
+3. Dans le shell (2ème fenêtre), tapez les lignes suivantes pour lancer correctement ce script.
+
+```bash
+# On vérifie que le téléchargement s'est bien passé. 
+# Le fichier est dans la racine '/' 
+$ ls ..
+ insulins.csv insulins.fasta
+$ cd
+# On déplace le fichier dans data/fasta/
+$ mv ../insulins.* data/fasta/
+# Vérifie que le dossier data/ est bien présent.
+$ ls -F data/fasta
+insulin.fasta insulins.fasta insulins.csv multi.fasta
 ```
 
 # C. Commande find    
@@ -213,42 +239,38 @@ head -n <number> file
 tail -n <number> file
 ```
 
-Par exemple, si on veut afficher les trois 1ères lignes du fichier Mus_musculus.GRCm38.75_chr1.bed...
+Par exemple, si on veut afficher les trois 1ères lignes du fichier `insulins.fasta`...
 
 ```bash
 # On se place dans son HOME. 
 $ cd
 # On affiche l'arborescence de data/ 
-$ cd data/mouse
-$ head -n 3 Mus_musculus.GRCm38.75_chr1.bed
-1	3054233	3054733
-1	3054233	3054733
-1	3054233	3054733
+$ cd data/fasta
+$ head -n 3 insulins.fasta
+>XP_013992220.2 insulin [Salmo salar]
+MAFWLQAASLLVLLALSPGADAAAVQHLCGSHLVDALYLVCGEKGLFYNPKRDVDPLIGFLSPKSAQEDE
+EFPFKDQMEMMVKRGSVEQCCHKPCNIFDLQNYCN
 ```
 
 Pour la commande tail, c'est la même chose mais pour les dernières du fichier.
 ```bash
-$ tail -n 3 Mus_musculus.GRCm38.75_chr1.bed
-1	195240910	195241007
-1	195240910	195241007
-1	195240910	195241007
+$ tail -n 3 insulins.fasta
+>NP_001093706.1 insulin precursor [Xenopus tropicalis]
+MALWMQCLPLVLVLLFSTPNTEALANQHLCGSHLVEALYLVCGDRGFFYYPKIKRDIEQAMVNGPQDNEL
+DGMQLQPQEYQKMKRGIVEQCCHSTCSLFQLESYCN
 ```
 
 ### 2. Saut de lignes avec -n + `<number>`
   
 Si le nombre est précédé d'un signe '+', il y aura saut jusqu'au numéro de ligne. Par exemple, pour le fichier insulin.fasta que vous pouvez créer en copiant la ligne suivante et en la collant dans le shell
   
-```bash
-$ echo -e ">INS_HUMAN\nMALWMRLLPLLALLALWGPDPAAAFVNQHLCGSHLVEALYLVCGERGFFYTPKTRREAEDLQVGQVELGG\GPGAGSLQPLALEGSLQKRGIVEQCCTSICSLYQLENYCN" > insulin.fasta
-```
-  
 Dans le format FASTA , il y a 1 ligne d'entête commençant par un chevron '>'. Si on veut l'enlever, on tapera:
 
 ```bash
 # On se place dans son HOME. 
-$ cd data
+$ cd 
 # On fait la recherche 
-$ tail -n +2 insulin.fasta
+$ tail -n +2 data/fasta/insulin.fasta
 ```
   
 ### 3. La commande less
@@ -289,9 +311,6 @@ q	        Quit less
 # F. Commande grep  
 
 ## Filtrer des lignes dans un fichier texte.
-
-> **Note**: Chaque fois que vous cliquez dans la fenêtre de l'émulateur, celui-ci prend la main sur la souris et la fait "disparaître" (comme dans un vrai mode "Ligne de Commande"). Pour "retrouver" votre souris, tapez sur la touche <kbd>Esc</kbd>.
-
 
 ### 1. Syntaxe de la commande grep
 
@@ -353,13 +372,9 @@ main()
 
 ## 4. Commande grep - Les expressions régulières
 
-Note Bioinformatique: La syntaxe des expressions régulières de la commande grep est très proche de celle des séquences consensus de la banque de données PROSITE.
+> **Note Bioinformatique**: La syntaxe des expressions régulières de la commande grep est très proche de celle des séquences consensus de la banque de données PROSITE.
 
 Pour la suite de cette page,  nous allons nous servir d'un fichier multi-fasta comme exemple créé avec la commande suivante (à copier et à coller dans le shell).
-
-```bash
-$ echo -e ">seq1\nACGT\n>qes2\nCCCA\n>esq3\nATATAT" > multi.fasta
-```
 
 Pour définir des motifs complexes et réaliser des recherches plus fines, il existe des syntaxes spécifiques utilisant les symboles ci-dessous .
 
@@ -475,7 +490,7 @@ $ egrep '^>...[0-9]' multi.fasta
 >sq29
 ```
 
-On voit que l'entête sq29 correspond bien à la définition du motif. On a trois caractères quelconques s q et 2 suivi d'un chiffre 9.
+On voit que l'entête `sq29` correspond bien à la définition du motif. On a trois caractères quelconques s q et 2 suivi d'un chiffre 9.
 
 L'étoile  <kbd>*</kbd> est un opérateur de répétition qui indique que le caractère précédent dans le motif peut être répété 0 à plusieurs fois. On l'associe souvent au symbole point (.) mais il peut fonctionner avec n'importe quel autre opérateur.
 
@@ -509,8 +524,6 @@ $ egrep '^>[a-z]{3}' multi.fasta
 
 # H. Pipe et redirection     
 
-> **Note**: Chaque fois que vous cliquez dans la fenêtre de l'émulateur, celui-ci prend la main sur la souris et la fait "disparaître" (comme dans un vrai mode "Ligne de Commande"). Pour "retrouver" votre souris, tapez sur la touche Esc.
-
 ## 1. La redirection pour sauvegarder le résultat des commandes
 
 Par défaut, dans un shell, le résultat d'une commande est affiché sur l'écran. On peut toutefois rediriger cette sortie dans un fichier à l'aide du symbole >
@@ -519,23 +532,21 @@ Par défaut, dans un shell, le résultat d'une commande est affiché sur l'écra
 # On se place dans son HOME. 
 $ cd
 # On affiche l'arborescence de data/ 
-$ cd data/mouse
-$ head -n 3 Mus_musculus.GRCm38.75_chr1.bed
-1	3054233	3054733
-1	3054233	3054733
-1	3054233	3054733
-$ head -n 3 Mus_musculus.GRCm38.75_chr1.bed > three.bed
+$ cd data/fasta
+$ head -n 3 insulins.fasta
+>XP_013992220.2 insulin [Salmo salar]
+MAFWLQAASLLVLLALSPGADAAAVQHLCGSHLVDALYLVCGEKGLFYNPKRDVDPLIGFLSPKSAQEDE
+EFPFKDQMEMMVKRGSVEQCCHKPCNIFDLQNYCN
+$ head -n 3 insulins.fasta > salmo.fasta
 $ ls
-Mus_musculus.GRCm38.75_chr1.bed
-Mus_musculus.GRCm38.75_chr1_bed.csv
-Mus_musculus.GRCm38.75_chr1_genes.txt
-Mus_musculus.GRCm38.75_chr1.gtf
-three.bed
-$ less three.bed
-1	3054233	3054733
-1	3054233	3054733
-1	3054233	3054733
-three.bed (END)
+insulin.fasta
+insulins.fasta
+multi.fasta
+salmo.fasta
+$ cat salmo.bed
+>XP_013992220.2 insulin [Salmo salar]
+MAFWLQAASLLVLLALSPGADAAAVQHLCGSHLVDALYLVCGEKGLFYNPKRDVDPLIGFLSPKSAQEDE
+EFPFKDQMEMMVKRGSVEQCCHKPCNIFDLQNYCN
 ```
 
 Le fichier three.bed contient alors les 3 lignes.
@@ -546,27 +557,29 @@ Dans la plupart des cas, on recherche à combiner plusieurs commandes à la suit
 Par exemple,
 ```bash
 # On se place dans son HOME. 
-$ cd data/mouse
+$ cd data/fasta
 # C'est parti 
-$ tail -n +6 Mus-musculus.GRCm38.75_chr1.gtf | head -n 5
+$ tail -n +7 insulins.fasta | head -n 3
 ```
 
 Dans cet exemple, on a un pipeline avec deux commandes tail et head.
 
-- La commande tail ne commence qu'à la 6ème ligne et affiche le contenu du reste du fichier.
-- La commande head prend le résultat de tail (c'est à dire le fichier tronqué de son entête) et n'affiche que les 5 1ères lignes.
+- La commande tail ne commence qu'à la 7ème ligne et affiche le contenu du reste du fichier.
+- La commande head prend le résultat de tail (c'est à dire le fichier tronqué de son entête) et n'affiche que les 3 1ères lignes.
 
-### Question 1: Dans le fichier data/improper.fasta, comment faites-vous pour n'afficher que la séquence de good-sequence
+### Question 1: Dans le fichier data/fasta/insulins.fasta, comment faites-vous pour n'afficher que la séquence de Leopardus geoffroyi
 
-Le résultat attendu est: AGCTAGCTACTAGCAGCTACTACGAGCATCTACGGCGCGATCTACG
+Le résultat attendu est: 
+```
+>XP_045343176.1 insulin [Leopardus geoffroyi]
+MALWTRLLPLLALLSLWTPAPTRAFVNQHLCGSHLVEALYLVCGERGFFYTPKARREADDLQGKDAELGE
+APGAGGLQPSALEAPLQKRGIVEQCCASVCSLYQLEHYCN
+```
 
 > Note: Si vous voulez commencer la recherche du répertoire courant, il faut mettre un point (.)
 
 
 # I. Commandes cut, paste     
-
-> **Note**: Chaque fois que vous cliquez dans la fenêtre de l'émulateur, celui-ci prend la main sur la souris et la fait "disparaître" (comme dans un vrai mode "Ligne de Commande"). Pour "retrouver" votre souris, tapez sur la touche <kbd>Esc</kbd>.
-
 
 ## 1. La commande cut
 La commande cut est l'un des outils de filtrage de texte présents dans Linux et UNIX.
@@ -589,19 +602,111 @@ Options            Description
 --output-delimiter Par défaut, la commande CUT utilise le délimiteur d'entrée en tant que délimiteur de sortie,
 mais vous pouvez modifier ce comportement en utilisant cette option.
 ```
-
-> **Note**: Pour les lignes de commande compliquées, vous pouvez faire un copier/coller. Sélectionner avec la souris -- par exemple -- la ligne 2 ci-dessous, faire un clic avec le bouton droit et sélectionner Copier. Puis, allez sur le shell Unix et faire un bouton droit pour choisir Coller. La ligne de commande est alors copiée, il ne vous reste plus qu'à la valider avec la touche Entrée.
+Par exemple sur le fichier `data/fasta/insulins.csv`, on souhaite extraire les colonnes du nom de l'organisme ainsi que la longueur de la séquence.
 
 ```bash
-# On se place dans son HOME. 
 $ cd
-$ cd data/zmays-snps/data/seqs
-$ touch zmays{A,C}_R{1,2}-temp.fastq
+$ head -n 1 data/fasta/insulins.csv
+id,title,organism,length
+# On a 4 colonnes.
+# Les colonnes qui nous intéressent sont la 3 et la 4
+$ cut -d ',' -f 3,4 data/fasta/insulins.csv | head -n 5
+organism,length
+Salmo salar,105
+Salmo salar,139
+Homo sapiens,110
+Homo sapiens,110
 ```
-
   
 ## 2. La commande paste
 
+```
+Utilisation : paste [OPTION]... [FICHIER]...
+Écrire séquentiellement les lignes correspondantes de chaque FICHIER, séparées par des tabulations, vers la sortie standard.
+Sans FICHIER ou quand FICHIER est -, lire l'entrée standard.
+
+Les arguments obligatoires pour les options longues le sont aussi pour les options courtes.
+  -d, --delimiters=LIST   utiliser les caractères de LIST au lieu de tabulations
+  -s, --serial            copier un seul fichier à la fois au lieu de le faire
+                            en parallèle
+  -z, --zero-terminated    le délimiteur de lignes est l'octet NUL au lieu
+                            du saut de ligne
+      --help     afficher l'aide et quitter
+      --version  afficher des informations de version et quitter
+```
+
 # J. Commandes sort et uniq
 
+## 1. La commande sort
 
+On souhaite extraire les organismes et les trier par ordre alphabétique.
+
+```bash
+$ cd
+$ head -n 1 data/fasta/insulins.csv
+id,title,organism,length
+# On a 4 colonnes.
+# La colonne qui nous intéresse est la 3
+$ cut -d ',' -f 3 data/fasta/insulins.csv |  tail -n +2 | sort | tail -n 5
+Xiphophorus maculatus
+Zalophus californianus
+Zeugodacus cucurbitae
+Zeugodacus cucurbitae
+Zonotrichia albicollis
+```
+
+## 2. La commande uniq 
+
+```
+Utilisation : uniq [OPTION]... [ENTRÉE [SORTIE]]
+Filtrer les lignes adjacentes correspondantes depuis ENTRÉE (ou l'entrée standard), en écrivant dans SORTIE (ou la sortie standard).
+
+Sans option, les lignes correspondantes sont fusionnées sur la première occurrence.
+
+Les arguments obligatoires pour les options longues le sont aussi pour les options courtes.
+  -c, --count           préfixer les lignes par le nombre d'occurrences
+  -d, --repeated        n'afficher que les lignes ayant des duplicatas, une
+                          pour chaque groupe
+  -D                    afficher toutes les lignes en double
+      --all-repeated[=MÉTHODE]  comme -D mais les groupes peuvent être
+                                  séparés par une ligne vide :
+                                  METHOD={none(par défaut),prepend,separate}
+  -f, --skip-fields=N   ne pas comparer les N premiers champs
+      --group[=MÉTHODE]  montrer tous les éléments, en séparant les groupes par
+                          une ligne vide ; valeurs possibles pour MÉTHODE :
+                          none (par défaut), prepend, append ou both
+  -i, --ignore-case     ignorer les différences de casse à la comparaison
+  -s, --skip-chars=N    éviter de comparer les N premiers caractères
+  -u, --unique          n'afficher que les lignes uniques
+  -z, --zero-terminated     le délimiteur de lignes est l'octet NUL, pas le
+                              saut de ligne
+  -w, --check-chars=N   ne pas comparer plus de N caractères dans les lignes
+      --help     afficher l'aide et quitter
+      --version  afficher des informations de version et quitter
+```
+
+Elle sert à supprimer les doublons et à compter le nombre d'occurrences.
+
+```bash
+$ cd
+$ cut -d ',' -f 3 data/fasta/insulins.csv |  tail -n +2 | sort | uniq | tail -n 5
+Xiphophorus hellerii
+Xiphophorus maculatus
+Zalophus californianus
+Zeugodacus cucurbitae
+Zonotrichia albicollis
+```
+
+```bash
+$ cd
+$ cut -d ',' -f 3 data/fasta/insulins.csv |  tail -n +2 | sort | uniq -c | tail -n 5
+      2 Xiphophorus hellerii
+      2 Xiphophorus maculatus
+      1 Zalophus californianus
+      2 Zeugodacus cucurbitae
+      1 Zonotrichia albicollis
+```
+
+**Question**: On voudrait savoir si toutes les séquences dans le fichier sont bien des séquences d'insulines. Comment pourriez-vous le vérifier ?
+
+> **Note**: Pour des raisons de simplicité, on utilisera le fichier `insulins.csv` et non `insulins.fasta`

@@ -391,3 +391,31 @@ In awk, the ‘*’ operator can match the null string. This is particularly imp
 $ echo abc | awk '{ gsub(/m*/, "X"); print }'
 -| XaXbXcX
 Although this makes a certain amount of sense, it can be surprising.
+
+## Exercices
+
+### Question 1: Ecrire un script `head.awk`
+Ce script doit reproduire le comportement de la commande shell `head`. Le code doit pouvoir n'afficher que les premières lignes
+Par exemple,
+
+```awk
+$ awk -v N=3 -f head.awk people.tsv
+Nom	Age	Sexe	A	B
+Anna	21	F	123	10
+Denise	89	F	654	89
+```
+>**Note**:L'argument `-v N=3` permet de passer la variable `N` ainsi que la valeur assigné `3` au script. On l'utilise alors comme n'importe quelle variable comme le montre le script ci-dessous:
+
+    ```awk
+    $ awk -v N=3 'BEGIN {print N}' people.tsv
+    3
+    ```
+
+### Question 2: Ecrire un script `wc.awk`
+Ce script doit reproduire le comportement de la commande shell `wc`. Le code doit pouvoir compter le nombre de lignes, de mots et de caractères.
+Par exemple,
+
+```awk
+$ awk -f wc.awk people.tsv
+9     45     156
+```

@@ -220,7 +220,8 @@ For example:
             print "Match of", regex, "found at", where, "in", $0
        }
 }
-```awk
+```
+
 This program looks for lines that match the regular expression stored in the variable regex. This regular expression can be changed. If the first word on a line is ‘FIND’, regex is changed to be the second word on that line. Therefore, if given:
 
 ```awk
@@ -263,9 +264,8 @@ Before splitting the string, patsplit() deletes any previously existing elements
 ### split(string, array [, fieldsep [, seps ] ])
 
 Découpe `string` en mots séprés par `fieldsep` et stocke ces mots dans `array`et les _String_ de séparateur dans `seps`.
-Divide string into pieces separated by fieldsep and store the pieces in array and the separator strings in the seps array. The first piece is stored in array[1], the second piece in array[2], and so forth. The string value of the third argument, fieldsep, is a regexp describing where to split string (much as FS can be a regexp describing where to split input records). If fieldsep is omitted, the value of FS is used. split() returns the number of elements created. seps is a gawk extension, with seps[i] being the separator string between array[i] and array[i+1]. If fieldsep is a single space, then any leading whitespace goes into seps[0] and any trailing whitespace goes into seps[n], where n is the return value of split() (i.e., the number of elements in array).
 
-The split() function splits strings into pieces in the same way that input lines are split into fields. For example:
+Par exemple:
 
 ```awk
 # splits the string "cul-de-sac" into three fields using ‘-’ as the separator. 

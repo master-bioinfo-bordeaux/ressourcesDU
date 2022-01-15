@@ -411,11 +411,47 @@ Denise	89	F	654	89
     3
     ```
 
-### Question 2: Ecrire un script `wc.awk`
-Ce script doit reproduire le comportement de la commande shell `wc`. Le code doit pouvoir compter le nombre de lignes, de mots et de caractères.
+### Question 2: Ecrire un script `linecount.awk`
+Ce script doit reproduire le comportement de la commande shell `wc -l`. Le code doit pouvoir compter le nombre de lignes d'un fichier texte.
+Par exemple,
+
+```awk
+$ awk -f linecount.awk people.tsv
+9
+```
+
+### Question 3: Ecrire un script `wordcount.awk`
+Ce script doit reproduire le comportement de la commande shell `wc -w`. Le code doit pouvoir compter le nombre de mots.
+Par exemple,
+
+```awk
+$ awk -f wordcount.awk people.tsv
+9     45     156
+```
+### Question 4: Ecrire un script `wc.awk`
+En vous inspirant de ce que vous avez trouvé précédemment, Ecrire un script qui doit reproduire le comportement de la commande shell `wc`. Le code doit pouvoir compter le nombre de lignes, de mots et de caractères.
 Par exemple,
 
 ```awk
 $ awk -f wc.awk people.tsv
 9     45     156
 ```
+
+### Question 10: Ecrire un script `occurrences.awk`
+Ce script doit reproduire le comportement de la commande shell `uniq -c`. Le code doit pouvoir compter le nombre d'occurrences d'un mot dans un fichier texte.
+Par exemple,
+
+```awk
+$ awk -f occurrences.awk people.tsv
+1 ?
+1 Anna
+1 Chloé
+2 Denise
+1 Fredo
+1 Léa
+1 Nom
+1 Xavier
+```
+> **Note**: On ne prendra en compte que la 1ère colonne
+
+> **Note**: Pour l'implantation, on utilisera un dictionnaire (tableau avec un système clé/valeur).

@@ -179,32 +179,26 @@ replaces all occurrences of the string ‘Britain’ with ‘United Kingdom’ f
 The gsub() function returns the number of substitutions made. If the variable to search and alter (target) is omitted, then the entire input record ($0) is used. As in sub(), the characters ‘&’ and ‘\’ are special, and the third argument must be assignable.
 
 ### index(in, find)
-Search the string in for the first occurrence of the string find, and return the position in characters where that occurrence begins in the string in. Consider the following example:
+Cherche la _String_ `in` for the first occurrence of the string find, and retourne la position à laquelle l'occurrence commence dans la _String_ `in`. Par exemple:
 
+```awk
 $ awk 'BEGIN { print index("peanut", "an") }'
 -| 3
-If find is not found, index() returns zero.
+```
 
-With BWK awk and gawk, it is a fatal error to use a regexp constant for find. Other implementations allow it, simply treating the regexp constant as an expression meaning ‘$0 ~ /regexp/’. (d.c.)
+Si `find` n'est pas trouvé, `index()` retourne zero.
+
 
 ### length([string])
-Return the number of characters in string. If string is a number, the length of the digit string representing that number is returned. For example, length("abcde") is five. By contrast, length(15 * 35) works out to three. In this example, 15 * 35 = 525, and 525 is then converted to the string "525", which has three characters.
+Retourne le nmbre de caractères dans `string`. Si `string` est un nombre, retourne le nombre de chiffres. 
 
-If no argument is supplied, length() returns the length of $0.
+Par exemple, 
 
-NOTE: In older versions of awk, the length() function could be called without any parentheses. Doing so is considered poor practice, although the 2008 POSIX standard explicitly allows it, to support historical practice. For programs to be maximally portable, always supply the parentheses.
+```awk
+i = length("abcde") #i = 5
+v = length(15 * 35) # v= 3 car 15 * 35 = 525 et 525 est converti en _String_ "525" qui a trois caractères.
+```
 
-If length() is called with a variable that has not been used, gawk forces the variable to be a scalar. Other implementations of awk leave the variable without a type. (d.c.) Consider:
-
-$ gawk 'BEGIN { print length(x) ; x[1] = 1 }'
--| 0
-error→ gawk: fatal: attempt to use scalar `x' as array
-
-$ nawk 'BEGIN { print length(x) ; x[1] = 1 }'
--| 0
-If --lint has been specified on the command line, gawk issues a warning about this.
-
-With gawk and several other awk implementations, when given an array argument, the length() function returns the number of elements in the array. (c.e.) This is less useful than it might seem at first, as the array is not guaranteed to be indexed from one to the number of elements in it. If --lint is provided on the command line (see section Command-Line Options), gawk warns that passing an array argument is not portable. If --posix is supplied, using an array argument is a fatal error (see section Arrays in awk).
 
 ### match(string, regexp [, array])
 Search string for the longest, leftmost substring matched by the regular expression regexp and return the character position (index) at which that substring begins (one, if it starts at the beginning of string). If no match is found, return zero.
@@ -216,7 +210,7 @@ The order of the first two arguments is the opposite of most other string functi
 The match() function sets the predefined variable RSTART to the index. It also sets the predefined variable RLENGTH to the length in characters of the matched substring. If no match is found, RSTART is set to zero, and RLENGTH to -1.
 
 For example:
-
+```awk
 {
     if ($1 == "FIND")
         regex = $2
@@ -226,8 +220,10 @@ For example:
             print "Match of", regex, "found at", where, "in", $0
        }
 }
+```awk
 This program looks for lines that match the regular expression stored in the variable regex. This regular expression can be changed. If the first word on a line is ‘FIND’, regex is changed to be the second word on that line. Therefore, if given:
 
+```awk
 FIND ru+n
 My program runs
 but not very quickly
@@ -235,27 +231,23 @@ FIND Melvin
 JF+KM
 This line is property of Reality Engineering Co.
 Melvin was here.
-awk prints:
+```
 
+awk prints:
+```awk
 Match of ru+n found at 12 in My program runs
 Match of Melvin found at 1 in Melvin was here.
+```
+
 If array is present, it is cleared, and then the zeroth element of array is set to the entire portion of string matched by regexp. If regexp contains parentheses, the integer-indexed elements of array are set to contain the portion of string matching the corresponding parenthesized subexpression. For example:
 
-$ echo foooobazbarrrrr |
-> gawk '{ match($0, /(fo+).+(bar*)/, arr)
->         print arr[1], arr[2] }'
+```awk
+$ echo foooobazbarrrrr | awk '{ match($0, /(fo+).+(bar*)/, arr); print arr[1], arr[2] }'
 -| foooo barrrrr
-In addition, multidimensional subscripts are available providing the start index and length of each matched subexpression:
+```
 
-$ echo foooobazbarrrrr |
-> gawk '{ match($0, /(fo+).+(bar*)/, arr)
->           print arr[1], arr[2]
->           print arr[1, "start"], arr[1, "length"]
->           print arr[2, "start"], arr[2, "length"]
-> }'
--| foooo barrrrr
--| 1 5
--| 9 7
+
+
 There may not be subscripts for the start and index for every parenthesized subexpression, because they may not all have matched text; thus, they should be tested for with the in operator (see section Referring to an Array Element).
 
 The array argument to match() is a gawk extension. In compatibility mode (see section Command-Line Options), using a third argument is a fatal error.
@@ -270,42 +262,36 @@ Before splitting the string, patsplit() deletes any previously existing elements
 
 ### split(string, array [, fieldsep [, seps ] ])
 
+Découpe `string` en mots séprés par `fieldsep` et stocke ces mots dans `array`et les _String_ de séparateur dans `seps`.
 Divide string into pieces separated by fieldsep and store the pieces in array and the separator strings in the seps array. The first piece is stored in array[1], the second piece in array[2], and so forth. The string value of the third argument, fieldsep, is a regexp describing where to split string (much as FS can be a regexp describing where to split input records). If fieldsep is omitted, the value of FS is used. split() returns the number of elements created. seps is a gawk extension, with seps[i] being the separator string between array[i] and array[i+1]. If fieldsep is a single space, then any leading whitespace goes into seps[0] and any trailing whitespace goes into seps[n], where n is the return value of split() (i.e., the number of elements in array).
 
 The split() function splits strings into pieces in the same way that input lines are split into fields. For example:
 
+```awk
+# splits the string "cul-de-sac" into three fields using ‘-’ as the separator. 
 split("cul-de-sac", a, "-", seps)
-splits the string "cul-de-sac" into three fields using ‘-’ as the separator. It sets the contents of the array a as follows:
+```
 
+```awk
+# It sets the contents of the array a as follows:
 a[1] = "cul"
 a[2] = "de"
 a[3] = "sac"
-and sets the contents of the array seps as follows:
-
+# and sets the contents of the array seps as follows:
 seps[1] = "-"
 seps[2] = "-"
-The value returned by this call to split() is three.
-
-As with input field-splitting, when the value of fieldsep is " ", leading and trailing whitespace is ignored in values assigned to the elements of array but not in seps, and the elements are separated by runs of whitespace. Also, as with input field splitting, if fieldsep is the null string, each individual character in the string is split into its own array element. (c.e.) Additionally, if fieldsep is a single-character string, that string acts as the separator, even if its value is a regular expression metacharacter.
-
-Note, however, that RS has no effect on the way split() works. Even though ‘RS = ""’ causes the newline character to also be an input field separator, this does not affect how split() splits strings.
-
-Modern implementations of awk, including gawk, allow the third argument to be a regexp constant (/…/) as well as a string. (d.c.) The POSIX standard allows this as well. See section Using Dynamic Regexps for a discussion of the difference between using a string constant or a regexp constant, and the implications for writing your program correctly.
-
-Before splitting the string, split() deletes any previously existing elements in the arrays array and seps.
-
-If string is null, the array has no elements. (So this is a portable way to delete an entire array with one statement. See section The delete Statement.)
-
-If string does not match fieldsep at all (but is not null), array has one element only. The value of that element is the original string.
-
-In POSIX mode (see section Command-Line Options), the fourth argument is not allowed.
+# The value returned by this call to split() is **three**.
+```
 
 ### sprintf(format, expression1, …)
 
-Return (without printing) the string that printf would have printed out with the same arguments (see section Using printf Statements for Fancier Printing). For example:
+Retourne sans afficher la _String_ que `printf` aurait afficher avec les mêmes arguments.
+Par exemple,
 
+```awk
 pival = sprintf("pi = %.2f (approx.)", 22/7)
 assigns the string ‘pi = 3.14 (approx.)’ to the variable pival.
+```
 
 ### strtonum(str)
 Examine str and return its numeric value. If str begins with a leading ‘0’, strtonum() assumes that str is an octal number. If str begins with a leading ‘0x’ or ‘0X’, strtonum() assumes that str is a hexadecimal number. For example:

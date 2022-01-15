@@ -37,6 +37,8 @@ Pour cette série d'exercices sur le shell Unix, nous utiliserons la séquence p
 
 **Fig.1**: Capture d'écran du shell Unix
 
+### 1. Création automatique de répertoires et de fichiers via un script `bash`
+
 1. Téléchargez le fichier `create_dataset.sh` dans la section Datasets ou cliquez ici [Link].
 1. Ensuite, sur la page https://copy.sh/v86,
 1. Cliquez sur le bouton Parcourir dans le panneau à droite à la rubrique Send Files to emulator.
@@ -55,6 +57,28 @@ $ sh ../create_dataset.sh
 # Vérifie que le dossier data/ est bien présent.
 $ ls -F
 data/
+```
+
+### 1. Dépôt du fichier `insulins.fasta`
+
+
+1. Deuxièmement, téléchargez la séquence d'insuline `insulins.fasta`
+1. Ensuite, sur la page https://copy.sh/v86,
+1. Cliquez sur le bouton Parcourir dans le panneau à droite à la rubrique Send Files to emulator.
+1. Sélectionnez le fichier `insulins.fasta`
+1. Dans le shell (2ème fenêtre), tapez les lignes suivantes pour lancer correctement ce script.
+
+```bash
+# On vérifie que le téléchargement s'est bien passé. 
+# Le fichier est dans la racine '/' 
+$ ls ..
+insulins.fasta
+$ cd
+# On déplace le fichier dans data/fasta/
+$ mb ../insulins.fasta data/fasta/
+# Vérifie que le dossier data/ est bien présent.
+$ ls -F data/fasta
+insulins.fasta multi.fasta
 ```
 
 # C. Commande find    

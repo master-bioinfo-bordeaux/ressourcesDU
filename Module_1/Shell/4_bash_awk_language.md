@@ -55,15 +55,22 @@ int(-3) is -3 as well.
 
 #### 3.2.2. Racine carrée
 sqrt(x)
-This gives you the positive square root of x. It reports an error if x is negative. Thus, sqrt(4) is two.
+
+```awk
+x=sqrt(4) # x = 2
+```
 
 #### 3.2.3. Fonction exponentielle
-exp(x)
-This gives you the exponential of x (e ^ x), or reports an error if x is out of range. The range of values x can have depends on your machine's floating point representation.
+
+```awk
+y=exp(x)
+```
 
 #### 3.2.4. Fonction log
-log(x)
-This gives you the natural logarithm of x, if x is positive; otherwise, it reports an error.
+```awk
+y=log(x)
+```
+
 
 #### 3.2.5. Fonctions trigonométriques
 
@@ -85,21 +92,8 @@ function randint(n) {
 }
 ```
 
-La formule utilisée ci-dessus permet d'avoir un nombre entier (grâce à `int(..)`) bete ntreween `zero` and `n - 1`, inclus. 
+La formule utilisée ci-dessus permet d'avoir un nombre entier (grâce à `int(..)`) entre `zero` and `n - 1`, inclus. 
 
-Voici un autre exemple avec la simulation d'un lancer de dé à 6 faces
-```awk
-# Function to roll a simulated die.
-function roll(n) { 
-    return 1 + int(rand() * n);
-}
-
-# Roll 3 six-sided dice and
-# print total number of points.
-{
-    printf("%d points\n",roll(6)+roll(6)+roll(6));
-}
-```
 
 > **Attention!**: La fonction `rand()` donne toujours la même série de nombres aléatoires à chaque nouvelle exécution. Si vous souhaitez un comportement plus aléatoire, il peut être bon d'utiliser la fonction `srand(...)` suivante.
 
@@ -109,8 +103,7 @@ Génération d'un  nombre pseudo-aléatoire à partir d'une graine. Si non expli
 
 ## 4. Les fonction sur les _String_ 
 
-### asort(source [, dest [, how ] ]) #
-asorti(source [, dest [, how ] ]) #
+### asort(source [, dest [, how ] ]) et asorti(source [, dest [, how ] ]) 
 
 These two functions are similar in behavior, so they are described together.
 
@@ -122,25 +115,26 @@ When comparing strings, IGNORECASE affects the sorting (see section Sorting Arra
 
 For example, if the contents of a are as follows:
 
+```awk
 a["last"] = "de"
 a["first"] = "sac"
 a["middle"] = "cul"
-A call to asort():
 
+# A call to asort():
 asort(a)
-results in the following contents of a:
+```
+Le tableau `a` est modifié comme ceci:
 
 a[1] = "cul"
 a[2] = "de"
 a[3] = "sac"
-The asorti() function works similarly to asort(); however, the indices are sorted, instead of the values. Thus, in the previous example, starting with the same initial set of indices and values in a, calling ‘asorti(a)’ would yield:
 
+La fonction `asorti(..)` est la même mais elle trie les indices plutôt que les valeurs. Le précédent exemple donnerait:
+```awk
 a[1] = "first"
 a[2] = "last"
 a[3] = "middle"
-NOTE: You may not use either SYMTAB or FUNCTAB as the second argument to these functions. Attempting to do so produces a fatal error. You may use them as the first argument, but only if providing a second array to use for the actual sorting.
-
-You are allowed to use the same array for both the source and dest arguments, but doing so only makes sense if you’re also supplying the third argument.
+```
 
 ### gensub(regexp, replacement, how [, target]) 
 
@@ -163,9 +157,12 @@ As with sub(), you must type two backslashes in order to get one into the string
 
 The following example shows how you can use the third argument to control which match of the regexp should be changed:
 
+```awk
 $ echo a b c a b c |
 > gawk '{ print gensub(/a/, "AA", 2) }'
 -| a b c AA b c
+```
+
 In this case, $0 is the default target string. gensub() returns the new string as its result, which is passed directly to print for printing.
 
 If the how argument is a string that does not begin with ‘g’ or ‘G’, or if it is a number that is less than or equal to zero, only one substitution is performed. If how is zero, gawk issues a warning message.

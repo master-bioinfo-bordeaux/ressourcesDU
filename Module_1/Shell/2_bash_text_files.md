@@ -37,22 +37,23 @@ Pour cette série d'exercices sur le shell Unix, nous utiliserons la séquence p
 
 **Fig.1**: Capture d'écran du shell Unix
 
-Téléchargez le fichier bioDU_archive.tar.xz dans la section Datasets ou cliquez ici [Link].
-Ensuite, sur la page https://copy.sh/v86,
-Cliquez sur le bouton Parcourir dans le panneau à droite à la rubrique Send Files to emulator.
-Sélectionnez le fichier bioDU_archive.tar.xz
-Dans le shell (2ème fenêtre), tapez les lignes suivantes pour décompresser l'archive.
-Il y a un gros fichier qui peut prendre un peu de temps...
+1. Téléchargez le fichier `create_dataset.sh` dans la section Datasets ou cliquez ici [Link].
+1. Ensuite, sur la page https://copy.sh/v86,
+1. Cliquez sur le bouton Parcourir dans le panneau à droite à la rubrique Send Files to emulator.
+1. Sélectionnez le fichier `create_datasets.sh`
+1. Dans le shell (2ème fenêtre), tapez les lignes suivantes pour lancer correctement ce script.
+
 
 ```bash
 # On vérifie que le téléchargement s'est bien passé. 
 # Le fichier est dans la racine '/' 
 $ ls ..
-bioDU_archive.tar.xz
-# Décompresse l'archive 
-$ tar xf ../bioDU_archive.tar.gz
+create_dataset.sh
+$ cd
+# On lance le script pour générer automatiquement les fichiers et directories.
+$ sh ../create_dataset.sh
 # Vérifie que le dossier data/ est bien présent.
-$ ls
+$ ls -F
 data/
 ```
 
